@@ -27,7 +27,7 @@ const RAW_VOCAB = [
   { test: "Cam 16 Test 1", vocab: "Anecdotal", meaning: "Mang tính giai thoại", type: "adj", explanation: "Dựa trên câu chuyện cá nhân, không dựa trên nghiên cứu hay dữ liệu chắc chắn.", example: "The claim is ______ and not supported by scientific studies." },
   { test: "Cam 16 Test 1", vocab: "Assumption", meaning: "Giả định", type: "n", explanation: "Điều được cho là đúng dù chưa có bằng chứng chắc chắn.", example: "Their ______ about demand turned out to be wrong." },
   { test: "Cam 16 Test 1", vocab: "Manipulate", meaning: "Thao túng", type: "v", explanation: "Điều khiển hoặc tác động khéo léo để đạt mục đích (thường không minh bạch).", example: "Some ads try to ______ consumers into buying unnecessary products." },
-  { test: "Cam 16 Test 1", vocab: "Lodge", meaning: "Khẳng định, nộp/đệ (khiếu nại, cáo buộc)", type: "v", explanation: "Đưa ra một tuyên bố chính thức hoặc nộp đơn/khiếu nại.", example: "They ______ a formal complaint about the service." },
+  { test: "Cam 16 Test 1", vocab: "Lodge", meaning: "Khẳng định, nộp/đệ", type: "v", explanation: "Đưa ra một tuyên bố chính thức hoặc nộp đơn/khiếu nại.", example: "They ______ a formal complaint about the service." },
   { test: "Cam 16 Test 1", vocab: "Deliberate", meaning: "Cố ý, có chủ đích", type: "adj", explanation: "Được thực hiện một cách có tính toán và có mục đích rõ ràng.", example: "The damage appeared to be ______ rather than accidental." },
   { test: "Cam 16 Test 1", vocab: "Remarkably", meaning: "Đáng chú ý", type: "adv", explanation: "Ở mức độ gây ngạc nhiên hoặc rất nổi bật.", example: "The results improved ______ after the new method was applied." },
   { test: "Cam 16 Test 1", vocab: "Astonishing", meaning: "Đáng kinh ngạc", type: "adj", explanation: "Gây ngạc nhiên mạnh vì vượt xa mong đợi.", example: "It was ______ how quickly the ice melted." },
@@ -50,15 +50,15 @@ const RAW_VOCAB = [
   { test: "Cam 16 Test 1", vocab: "Archeologist", meaning: "Nhà khảo cổ học", type: "n", explanation: "Người nghiên cứu quá khứ thông qua di tích, hiện vật và tàn tích.", example: "An ______ discovered tools from an ancient settlement." },
   { test: "Cam 16 Test 1", vocab: "Excavate", meaning: "Khai quật", type: "v", explanation: "Đào bới có phương pháp để tìm và lấy hiện vật/di tích dưới lòng đất.", example: "The team began to ______ the site carefully." },
   { test: "Cam 16 Test 1", vocab: "Predecessors", meaning: "Người tiền nhiệm", type: "n", explanation: "Những người giữ vị trí/công việc trước đó.", example: "He improved the system built by his ______." },
-  { test: "Cam 16 Test 1", vocab: "Shaft", meaning: "Trục; cán; hầm đứng (mỏ)", type: "n", explanation: "Phần dài dạng trụ (trục/cán), hoặc hầm đứng trong khai thác mỏ.", example: "Miners descended the ______ to reach the tunnels below." },
+  { test: "Cam 16 Test 1", vocab: "Shaft", meaning: "Trục; hầm đứng", type: "n", explanation: "Phần dài dạng trụ (trục/cán), hoặc hầm đứng trong khai thác mỏ.", example: "Miners descended the ______ to reach the tunnels below." },
   { test: "Cam 16 Test 1", vocab: "Intricate", meaning: "Phức tạp, tinh vi", type: "adj", explanation: "Có nhiều chi tiết đan xen, khó hiểu hoặc khó thực hiện.", example: "The device has an ______ design with many tiny parts." },
   { test: "Cam 16 Test 1", vocab: "Overlook", meaning: "Bỏ sót; nhìn từ trên cao", type: "n / v", explanation: "Không nhận ra/bỏ qua điều quan trọng; hoặc có tầm nhìn bao quát xuống dưới.", example: "It’s easy to ______ small errors in large datasets." },
   { test: "Cam 16 Test 1", vocab: "Exaggeration", meaning: "Phóng đại", type: "n", explanation: "Nói quá mức sự thật để gây ấn tượng hoặc thuyết phục.", example: "Calling it a disaster is an ______; the issue is minor." },
   { test: "Cam 16 Test 1", vocab: "Constitute", meaning: "Cấu thành", type: "v", explanation: "Tạo nên hoặc hợp thành một tổng thể.", example: "These factors ______ the core of the new policy." },
   { test: "Cam 16 Test 1", vocab: "Archetype", meaning: "Nguyên mẫu", type: "n", explanation: "Mẫu hình/kiểu mẫu tiêu biểu đại diện cho một nhóm hoặc ý tưởng.", example: "The hero is an ______ found in many myths." },
   { test: "Cam 16 Test 1", vocab: "Occupation", meaning: "Nghề nghiệp", type: "n", explanation: "Công việc hoặc nghề mà một người làm thường xuyên để kiếm sống.", example: "Her ______ involves analyzing customer behavior." },
-  { test: "Cam 16 Test 1", vocab: "Embody", meaning: "Tượng trưng, hiện thân", type: "v", explanation: "Thể hiện rõ ràng một ý tưởng/đặc điểm; là hình ảnh tiêu biểu của điều đó.", example: "Her leadership style ______ the company’s values." },
-  
+  { test: "Cam 16 Test 1", vocab: "Embody", meaning: "Tượng trưng", type: "v", explanation: "Thể hiện rõ ràng một ý tưởng/đặc điểm; là hình ảnh tiêu biểu của điều đó.", example: "Her leadership style ______ the company’s values." },
+
   // Cam 16 Test 2
   { test: "Cam 16 Test 2", vocab: "Scatter", meaning: "Rải rác", type: "v", explanation: "Làm cho nhiều vật bị phân tán ra nhiều nơi, không tập trung một chỗ.", example: "The wind ______ leaves across the road." },
   { test: "Cam 16 Test 2", vocab: "Controversial", meaning: "Gây tranh cãi", type: "adj", explanation: "Gây ra nhiều ý kiến trái chiều, dễ dẫn đến tranh luận.", example: "The proposal became highly ______ among students." },
@@ -95,7 +95,7 @@ const RAW_VOCAB = [
   { test: "Cam 16 Test 2", vocab: "Exaggerate", meaning: "Phóng đại", type: "v", explanation: "Nói quá sự thật để gây ấn tượng hoặc thuyết phục.", example: "Don’t ______ the problem; it’s manageable." },
   { test: "Cam 16 Test 2", vocab: "Plentiful", meaning: "Nhiều", type: "adj", explanation: "Dồi dào, có nhiều hơn đủ.", example: "Water is ______ during the rainy season." },
   { test: "Cam 16 Test 2", vocab: "Tend", meaning: "Có xu hướng", type: "v", explanation: "Thường có khuynh hướng xảy ra hoặc hành xử theo một cách.", example: "People ______ to spend more when they feel confident." },
-  { test: "Cam 16 Test 2", vocab: "Extraordinariness", meaning: "Đặc biệt, phi thường", type: "n", explanation: "Tính chất nổi bật, khác thường và đáng chú ý.", example: "The ______ of the discovery surprised the scientific community." },
+  { test: "Cam 16 Test 2", vocab: "Extraordinariness", meaning: "Đặc biệt", type: "n", explanation: "Tính chất nổi bật, khác thường và đáng chú ý.", example: "The ______ of the discovery surprised the scientific community." },
   { test: "Cam 16 Test 2", vocab: "Potent", meaning: "Mạnh mẽ", type: "adj", explanation: "Mạnh, có tác dụng lớn (thuốc, ý tưởng, ảnh hưởng).", example: "This herb has a ______ effect on pain." },
   { test: "Cam 16 Test 2", vocab: "Magnify", meaning: "Mở rộng, khuếch đại", type: "v", explanation: "Làm cho to hơn hoặc làm tăng mức độ/tầm quan trọng.", example: "A microscope can ______ tiny organisms." },
   { test: "Cam 16 Test 2", vocab: "Tolerance", meaning: "Khả năng chịu đựng", type: "n", explanation: "Khả năng chịu được điều kiện khó chịu hoặc chấp nhận khác biệt.", example: "Heat ______ varies across individuals." },
@@ -121,14 +121,14 @@ const RAW_VOCAB = [
   { test: "Cam 16 Test 2", vocab: "Recession", meaning: "Sự suy thoái", type: "n", explanation: "Giai đoạn kinh tế suy giảm kéo dài (tăng trưởng âm, thất nghiệp tăng...).", example: "During a ______, consumer spending often drops." },
   { test: "Cam 16 Test 2", vocab: "Crystallize", meaning: "Kết tinh", type: "v", explanation: "Trở nên rõ ràng/cụ thể hơn; hoặc tạo tinh thể.", example: "After the discussion, the idea began to ______." },
   { test: "Cam 16 Test 2", vocab: "Openness", meaning: "Sự cởi mở", type: "n", explanation: "Sẵn sàng tiếp nhận ý tưởng mới và giao tiếp thẳng thắn.", example: "Team ______ helps improve collaboration." },
-  { test: "Cam 16 Test 2", vocab: "Agreeableness", meaning: "Sự dễ chịu, dễ thương", type: "n", explanation: "Tính cách dễ hợp tác, thân thiện và hay đồng cảm.", example: "High ______ often leads to smoother teamwork." },
+  { test: "Cam 16 Test 2", vocab: "Agreeableness", meaning: "Sự dễ chịu", type: "n", explanation: "Tính cách dễ hợp tác, thân thiện và hay đồng cảm.", example: "High ______ often leads to smoother teamwork." },
   { test: "Cam 16 Test 2", vocab: "Assumption", meaning: "Giả định", type: "n", explanation: "Điều được cho là đúng dù chưa có bằng chứng chắc chắn.", example: "That ______ should be tested with real data." },
-  { test: "Cam 16 Test 2", vocab: "Empirical", meaning: "Mang tính thực nghiệm", type: "adj", explanation: "Dựa trên quan sát, đo lường và bằng chứng thực tế.", example: "We need ______ evidence, not opinions." },
+  { test: "Cam 16 Test 2", vocab: "Empirical", meaning: "Thực nghiệm", type: "adj", explanation: "Dựa trên quan sát, đo lường và bằng chứng thực tế.", example: "We need ______ evidence, not opinions." },
   { test: "Cam 16 Test 2", vocab: "Exceptional", meaning: "Phi thường, hiếm có", type: "adj", explanation: "Rất xuất sắc hoặc khác biệt theo hướng nổi bật.", example: "She showed ______ skill in analysis." },
   { test: "Cam 16 Test 2", vocab: "Trait", meaning: "Đặc điểm", type: "n", explanation: "Một đặc trưng hoặc tính chất thường thấy ở người/vật.", example: "Patience is a useful ______ for leaders." },
   { test: "Cam 16 Test 2", vocab: "Underestimate", meaning: "Đánh giá thấp", type: "v", explanation: "Ước lượng thấp hơn thực tế về mức độ/khả năng.", example: "Don’t ______ how long the project will take." },
-  { test: "Cam 16 Test 2", vocab: "Experiential", meaning: "Dựa trên kinh nghiệm", type: "adj", explanation: "Liên quan đến trải nghiệm thực tế và rút ra từ kinh nghiệm.", example: "Internships provide ______ learning that classes can’t replace." },
-  { test: "Cam 16 Test 2", vocab: "Circumstance", meaning: "Hoàn cảnh, tình huống", type: "n", explanation: "Điều kiện hoặc tình thế ảnh hưởng đến một sự việc.", example: "Under these ______, delays are understandable." },
+  { test: "Cam 16 Test 2", vocab: "Experiential", meaning: "Kinh nghiệm", type: "adj", explanation: "Liên quan đến trải nghiệm thực tế và rút ra từ kinh nghiệm.", example: "Internships provide ______ learning that classes can’t replace." },
+  { test: "Cam 16 Test 2", vocab: "Circumstance", meaning: "Hoàn cảnh", type: "n", explanation: "Điều kiện hoặc tình thế ảnh hưởng đến một sự việc.", example: "Under these ______, delays are understandable." },
   { test: "Cam 16 Test 2", vocab: "Characterize", meaning: "Biểu thị đặc điểm", type: "v", explanation: "Miêu tả đặc trưng/đặc điểm điển hình của ai đó hoặc cái gì đó.", example: "The period is ______ by rapid technological change." },
   { test: "Cam 16 Test 2", vocab: "Solely by", meaning: "Chỉ dựa trên", type: "adv", explanation: "Chỉ dựa vào một yếu tố duy nhất.", example: "Don’t judge performance ______ test scores." },
   { test: "Cam 16 Test 2", vocab: "Unfold", meaning: "Lộ ra", type: "v", explanation: "Dần dần diễn ra hoặc được hé lộ theo thời gian.", example: "A surprising story began to ______ during the interview." },
@@ -137,25 +137,25 @@ const RAW_VOCAB = [
   { test: "Cam 16 Test 2", vocab: "Cognition", meaning: "Nhận thức", type: "n", explanation: "Quá trình tư duy: hiểu, ghi nhớ, học tập và ra quyết định.", example: "Sleep affects ______ and concentration." },
   { test: "Cam 16 Test 2", vocab: "Modesty", meaning: "Khiêm tốn", type: "n", explanation: "Tính không khoe khoang, biết giữ chừng mực.", example: "Her ______ impressed everyone despite her success." },
   { test: "Cam 16 Test 2", vocab: "Intellectual", meaning: "Về mặt trí tuệ", type: "adj", explanation: "Liên quan đến trí tuệ, tư duy và hoạt động học thuật.", example: "The debate was ______ and challenging." },
-  { test: "Cam 16 Test 2", vocab: "Humility", meaning: "Khiêm tốn, nhún nhường", type: "v", explanation: "Thể hiện thái độ khiêm nhường, không tự cao.", example: "He tried to ______ himself despite winning the award." },
-  { test: "Cam 16 Test 2", vocab: "Compromise", meaning: "Dàn xếp, thoả hiệp", type: "n", explanation: "Sự thỏa thuận bằng cách mỗi bên nhượng bộ một phần.", example: "They reached a ______ after hours of negotiation." },
+  { test: "Cam 16 Test 2", vocab: "Humility", meaning: "Khiêm tốn", type: "v", explanation: "Thể hiện thái độ khiêm nhường, không tự cao.", example: "He tried to ______ himself despite winning the award." },
+  { test: "Cam 16 Test 2", vocab: "Compromise", meaning: "Thoả hiệp", type: "n", explanation: "Sự thỏa thuận bằng cách mỗi bên nhượng bộ một phần.", example: "They reached a ______ after hours of negotiation." },
   { test: "Cam 16 Test 2", vocab: "Extent", meaning: "Mức độ", type: "n", explanation: "Mức độ hoặc phạm vi mà một điều gì đó xảy ra.", example: "To what ______ does stress affect performance?" },
   { test: "Cam 16 Test 2", vocab: "Broad", meaning: "Rộng lớn", type: "adj", explanation: "Rộng, bao quát nhiều phạm vi hoặc nhiều chủ đề.", example: "The course gives a ______ overview of economics." },
   { test: "Cam 16 Test 2", vocab: "Objectivity", meaning: "Khách quan", type: "n", explanation: "Tính dựa trên sự thật, không bị cảm xúc hay định kiến chi phối.", example: "Good research requires ______ and clear methods." },
   { test: "Cam 16 Test 2", vocab: "Fairness", meaning: "Công bằng", type: "n", explanation: "Sự đối xử đúng mực và không thiên vị.", example: "Employees value ______ in performance reviews." },
   { test: "Cam 16 Test 2", vocab: "Prospect", meaning: "Triển vọng", type: "n", explanation: "Khả năng hoặc cơ hội có thể xảy ra trong tương lai.", example: "There is little ______ of improvement without investment." },
-  { test: "Cam 16 Test 2", vocab: "Detached", meaning: "Không lệ thuộc, tách rời", type: "adj", explanation: "Tách rời hoặc không bị dính líu/cảm xúc chi phối.", example: "Try to stay ______ and evaluate the facts." },
+  { test: "Cam 16 Test 2", vocab: "Detached", meaning: "Tách rời", type: "adj", explanation: "Tách rời hoặc không bị dính líu/cảm xúc chi phối.", example: "Try to stay ______ and evaluate the facts." },
   { test: "Cam 16 Test 2", vocab: "Egocentric", meaning: "Ích kỷ", type: "adj", explanation: "Chỉ tập trung vào bản thân, coi mình là trung tâm.", example: "An ______ attitude can damage teamwork." },
-  { test: "Cam 16 Test 2", vocab: "Generalize", meaning: "Nói chung chung", type: "v", explanation: "Rút ra kết luận chung từ một số trường hợp (đôi khi quá vội).", example: "Don’t ______ from one bad experience." },
+  { test: "Cam 16 Test 2", vocab: "Generalize", meaning: "Nói chung chung", type: "v", explanation: "Rút ra kết luận chung từ một số trường hợp.", example: "Don’t ______ from one bad experience." },
   { test: "Cam 16 Test 2", vocab: "Retaliation", meaning: "Trả thù", type: "n", explanation: "Hành động đáp trả để gây hại lại sau khi bị đối xử tệ.", example: "The company prohibits ______ in the workplace." },
   { test: "Cam 16 Test 2", vocab: "Conventional", meaning: "Thông thường", type: "adj", explanation: "Theo cách truyền thống, phổ biến và được chấp nhận rộng rãi.", example: "They chose a ______ approach instead of taking risks." },
 
   // Cam 16 Test 3
   { test: "Cam 16 Test 3", vocab: "Conquer", meaning: "Chinh phục", type: "v", explanation: "Chiếm được hoặc vượt qua một nơi/thử thách bằng nỗ lực hay sức mạnh.", example: "She worked hard to ______ her fear of public speaking." },
   { test: "Cam 16 Test 3", vocab: "Pass on to", meaning: "Truyền lại", type: "v", explanation: "Chuyển giao thứ gì đó (kiến thức, đồ vật, thông tin) cho người khác.", example: "Parents often ______ traditions to their children." },
-  { test: "Cam 16 Test 3", vocab: "Stitch", meaning: "Đính, đơm, may khâu", type: "v", explanation: "Khâu vá hoặc nối vải/da lại bằng chỉ.", example: "The nurse had to ______ the wound carefully." },
-  { test: "Cam 16 Test 3", vocab: "Mediterranean", meaning: "Thuộc biển Địa Trung Hải", type: "adj", explanation: "Liên quan đến khu vực/khí hậu/văn hoá quanh Địa Trung Hải.", example: "Olive trees thrive in a ______ climate." },
-  { test: "Cam 16 Test 3", vocab: "Involve", meaning: "Liên quan, bao hàm", type: "v", explanation: "Bao gồm như một phần cần thiết hoặc khiến ai đó tham gia.", example: "The job may ______ working on weekends." },
+  { test: "Cam 16 Test 3", vocab: "Stitch", meaning: "Đính, đơm", type: "v", explanation: "Khâu vá hoặc nối vải/da lại bằng chỉ.", example: "The nurse had to ______ the wound carefully." },
+  { test: "Cam 16 Test 3", vocab: "Mediterranean", meaning: "Địa Trung Hải", type: "adj", explanation: "Liên quan đến khu vực/khí hậu/văn hoá quanh Địa Trung Hải.", example: "Olive trees thrive in a ______ climate." },
+  { test: "Cam 16 Test 3", vocab: "Involve", meaning: "Liên quan", type: "v", explanation: "Bao gồm như một phần cần thiết hoặc khiến ai đó tham gia.", example: "The job may ______ working on weekends." },
   { test: "Cam 16 Test 3", vocab: "Consist", meaning: "Bao gồm", type: "v", explanation: "Được tạo thành từ các phần/thành phần nhất định.", example: "The course ______ of weekly lectures and projects." },
   { test: "Cam 16 Test 3", vocab: "Contrary", meaning: "Trái ngược", type: "adj", explanation: "Hoàn toàn khác hoặc đối lập với điều đã nói/kỳ vọng.", example: "Contrary to expectations, sales increased." },
   { test: "Cam 16 Test 3", vocab: "Pierce", meaning: "Chọc thủng", type: "v", explanation: "Đâm xuyên qua để tạo lỗ hoặc đi xuyên qua vật thể.", example: "A sharp object can ______ the thin plastic easily." },
@@ -190,7 +190,7 @@ const RAW_VOCAB = [
   { test: "Cam 16 Test 3", vocab: "Decay", meaning: "Phân rã", type: "v", explanation: "Bị mục nát hoặc phân huỷ theo thời gian.", example: "Leaves ______ quickly in warm, wet conditions." },
   { test: "Cam 16 Test 3", vocab: "Congregate", meaning: "Tụ họp", type: "v", explanation: "Tập trung lại thành một nhóm ở cùng một nơi.", example: "Birds ______ near the lake at dusk." },
   { test: "Cam 16 Test 3", vocab: "Settlement", meaning: "Khu định cư", type: "n", explanation: "Nơi con người sinh sống và hình thành cộng đồng.", example: "Archaeologists found traces of an early ______." },
-  { test: "Cam 16 Test 3", vocab: "Radiocarbon dating", meaning: "Định tuổi bằng carbon phóng xạ", type: "n", explanation: "Phương pháp xác định tuổi của vật hữu cơ dựa trên đồng vị carbon phóng xạ.", example: "They used ______ to estimate the age of the bone." },
+  { test: "Cam 16 Test 3", vocab: "Radiocarbon dating", meaning: "Định tuổi carbon", type: "n", explanation: "Phương pháp xác định tuổi của vật hữu cơ dựa trên đồng vị carbon phóng xạ.", example: "They used ______ to estimate the age of the bone." },
   { test: "Cam 16 Test 3", vocab: "Apparently", meaning: "Rõ ràng", type: "adv", explanation: "Có vẻ như đúng dựa trên những gì quan sát được.", example: "______ the train was delayed due to bad weather." },
   { test: "Cam 16 Test 3", vocab: "Primarily", meaning: "Chủ yếu", type: "adv", explanation: "Phần lớn hoặc chủ đạo là như vậy.", example: "The program is ______ designed for beginners." },
   { test: "Cam 16 Test 3", vocab: "Thermometer", meaning: "Nhiệt kế", type: "n", explanation: "Dụng cụ đo nhiệt độ.", example: "The nurse checked his temperature with a ______." },
@@ -198,11 +198,11 @@ const RAW_VOCAB = [
   { test: "Cam 16 Test 3", vocab: "Yield", meaning: "Sản lượng", type: "n", explanation: "Lượng sản phẩm thu được, đặc biệt trong nông nghiệp/sản xuất.", example: "Better irrigation increased the crop ______." },
   { test: "Cam 16 Test 3", vocab: "Thermal", meaning: "Liên quan đến nhiệt", type: "adj", explanation: "Có liên quan đến nhiệt độ hoặc nhiệt năng.", example: "The building uses ______ insulation to save energy." },
   { test: "Cam 16 Test 3", vocab: "Shade", meaning: "Bóng râm", type: "n", explanation: "Vùng tối do bị che ánh sáng mặt trời/nguồn sáng.", example: "We sat in the ______ to avoid the heat." },
-  { test: "Cam 16 Test 3", vocab: "Accelerate", meaning: "Gia tăng, nhanh lên", type: "v", explanation: "Tăng tốc hoặc làm cho diễn ra nhanh hơn.", example: "Strong winds can ______ the spread of fire." },
+  { test: "Cam 16 Test 3", vocab: "Accelerate", meaning: "Gia tăng", type: "v", explanation: "Tăng tốc hoặc làm cho diễn ra nhanh hơn.", example: "Strong winds can ______ the spread of fire." },
   { test: "Cam 16 Test 3", vocab: "Reversion", meaning: "Sự trở lại", type: "n", explanation: "Sự quay trở lại trạng thái cũ hoặc cách làm cũ.", example: "There was a ______ to traditional methods after the failure." },
   { test: "Cam 16 Test 3", vocab: "Detach", meaning: "Tháo ra", type: "v", explanation: "Tách rời khỏi vật khác; tháo ra khỏi vị trí gắn kết.", example: "Carefully ______ the cable before moving the device." },
-  { test: "Cam 16 Test 3", vocab: "Culmination", meaning: "Kết quả cuối cùng", type: "n", explanation: "Điểm kết thúc quan trọng nhất, kết quả sau một quá trình dài.", example: "The award was the ______ of years of hard work." },
-  { test: "Cam 16 Test 3", vocab: "Dictate", meaning: "Thao túng, điều khiển", type: "v", explanation: "Ra lệnh/áp đặt điều gì đó; quyết định một cách mạnh mẽ.", example: "Market demand often ______ what companies produce." },
+  { test: "Cam 16 Test 3", vocab: "Culmination", meaning: "Kết quả", type: "n", explanation: "Điểm kết thúc quan trọng nhất, kết quả sau một quá trình dài.", example: "The award was the ______ of years of hard work." },
+  { test: "Cam 16 Test 3", vocab: "Dictate", meaning: "Thao túng", type: "v", explanation: "Ra lệnh/áp đặt điều gì đó; quyết định một cách mạnh mẽ.", example: "Market demand often ______ what companies produce." },
   { test: "Cam 16 Test 3", vocab: "Pinpoint", meaning: "Xác định chính xác", type: "v", explanation: "Xác định đúng vị trí/nguồn gốc/nguyên nhân một cách rất chính xác.", example: "Analysts tried to ______ the source of the error." },
   { test: "Cam 16 Test 3", vocab: "Precise", meaning: "Chính xác", type: "adj", explanation: "Rõ ràng, đúng tuyệt đối, không mơ hồ.", example: "Please give a ______ time for the meeting." },
 
@@ -210,7 +210,7 @@ const RAW_VOCAB = [
   { test: "Cam 16 Test 4", vocab: "Canal", meaning: "Kênh, sông đào", type: "n", explanation: "Đường dẫn nước nhân tạo được xây dựng để vận chuyển nước hoặc tàu thuyền.", example: "Ancient engineers built a ______ to bring water into the city." },
   { test: "Cam 16 Test 4", vocab: "Ventilation", meaning: "Sự thông gió", type: "n", explanation: "Quá trình cung cấp không khí tươi và loại bỏ không khí cũ trong không gian kín.", example: "Proper ______ was necessary for workers digging underground tunnels." },
   { test: "Cam 16 Test 4", vocab: "Lid", meaning: "Nắp, vung", type: "n", explanation: "Vật dùng để che hoặc đậy phần trên của một vật chứa.", example: "He placed a stone ______ over the opening of the shaft." },
-  { test: "Cam 16 Test 4", vocab: "Carry out", meaning: "Tiến hành, thực hiện", type: "phrasal verb", explanation: "Thực hiện một kế hoạch, nhiệm vụ hoặc hoạt động.", example: "The engineers carefully ______ the construction plan." },
+  { test: "Cam 16 Test 4", vocab: "Carry out", meaning: "Tiến hành", type: "phrasal verb", explanation: "Thực hiện một kế hoạch, nhiệm vụ hoặc hoạt động.", example: "The engineers carefully ______ the construction plan." },
   { test: "Cam 16 Test 4", vocab: "Geometry", meaning: "Hình học", type: "n", explanation: "Nhánh toán học nghiên cứu hình dạng, kích thước và vị trí của các vật thể.", example: "Roman engineers relied on ______ to align tunnels accurately." },
   { test: "Cam 16 Test 4", vocab: "Encounter", meaning: "Gặp phải", type: "v", explanation: "Tình cờ gặp hoặc đối mặt với điều gì đó.", example: "Workers often ______ hard rock while digging." },
   { test: "Cam 16 Test 4", vocab: "Deviation", meaning: "Sự lệch hướng", type: "n", explanation: "Sự sai lệch khỏi hướng hoặc kế hoạch ban đầu.", example: "Even a small ______ could cause the tunnels to miss each other." },
@@ -252,13 +252,13 @@ const RAW_VOCAB = [
   { test: "Cam 16 Test 4", vocab: "Rectify", meaning: "Sửa chữa", type: "v", explanation: "Sửa lỗi hoặc điều chỉnh cho đúng.", example: "Teachers help ______ reading mistakes." },
   { test: "Cam 16 Test 4", vocab: "Possess", meaning: "Sở hữu", type: "v", explanation: "Có hoặc nắm giữ một thứ gì đó.", example: "Humans ______ advanced cognitive abilities." },
   { test: "Cam 16 Test 4", vocab: "Entrench", meaning: "Bén rễ sâu", type: "v", explanation: "Thiết lập vững chắc và khó thay đổi.", example: "Habits can become deeply ______." },
-  { test: "Cam 16 Test 4", vocab: "Literacy", meaning: "Khả năng đọc viết", type: "n", explanation: "Khả năng đọc và viết hiệu quả.", example: "Education programs aim to improve ______ rates." },
+  { test: "Cam 16 Test 4", vocab: "Literacy", meaning: "Đọc viết", type: "n", explanation: "Khả năng đọc và viết hiệu quả.", example: "Education programs aim to improve ______ rates." },
   { test: "Cam 16 Test 4", vocab: "Decode", meaning: "Giải mã", type: "v", explanation: "Hiểu hoặc chuyển đổi thông tin từ dạng mã.", example: "Children learn to ______ written words." },
   { test: "Cam 16 Test 4", vocab: "Inference", meaning: "Suy luận", type: "n", explanation: "Kết luận rút ra từ bằng chứng.", example: "Readers make ______ from context." },
-  { test: "Cam 16 Test 4", vocab: "Cognitive", meaning: "Thuộc nhận thức", type: "adj", explanation: "Liên quan đến quá trình suy nghĩ và hiểu biết.", example: "Reading strengthens ______ abilities." },
+  { test: "Cam 16 Test 4", vocab: "Cognitive", meaning: "Nhận thức", type: "adj", explanation: "Liên quan đến quá trình suy nghĩ và hiểu biết.", example: "Reading strengthens ______ abilities." },
   { test: "Cam 16 Test 4", vocab: "Comprehend", meaning: "Hiểu", type: "v", explanation: "Hiểu hoàn toàn một ý tưởng.", example: "Students must ______ complex arguments." },
   { test: "Cam 16 Test 4", vocab: "Bombardment", meaning: "Sự dồn dập", type: "n", explanation: "Sự tấn công liên tục bằng thông tin hoặc tín hiệu.", example: "People face a ______ of online information." },
-  { test: "Cam 16 Test 4", vocab: "Susceptible", meaning: "Dễ bị ảnh hưởng", type: "adj", explanation: "Dễ bị tác động bởi điều gì đó.", example: "Young readers are ______ to digital distractions." },
+  { test: "Cam 16 Test 4", vocab: "Susceptible", meaning: "Dễ ảnh hưởng", type: "adj", explanation: "Dễ bị tác động bởi điều gì đó.", example: "Young readers are ______ to digital distractions." },
   { test: "Cam 16 Test 4", vocab: "Irrational", meaning: "Phi lý", type: "adj", explanation: "Không dựa trên logic hoặc lý trí.", example: "Fear of technology can sometimes be ______." },
   { test: "Cam 16 Test 4", vocab: "Imply", meaning: "Ám chỉ", type: "v", explanation: "Gợi ý điều gì đó mà không nói trực tiếp.", example: "His tone seemed to ______ criticism." },
   { test: "Cam 16 Test 4", vocab: "Superiority", meaning: "Sự vượt trội", type: "n", explanation: "Trạng thái tốt hơn hoặc mạnh hơn.", example: "Some believe human judgment shows ______ over machines." },
@@ -282,59 +282,13 @@ const RAW_VOCAB = [
   { test: "Cam 16 Test 4", vocab: "Phenomenon", meaning: "Hiện tượng", type: "n", explanation: "Một sự kiện hoặc tình huống có thể quan sát được.", example: "AI adoption is a global ______." },
   { test: "Cam 16 Test 4", vocab: "Devote", meaning: "Cống hiến", type: "v", explanation: "Dành thời gian hoặc công sức cho điều gì đó.", example: "Researchers ______ years to developing new algorithms." },
   { test: "Cam 16 Test 4", vocab: "Portrayal", meaning: "Sự miêu tả", type: "n", explanation: "Cách một người hoặc ý tưởng được thể hiện.", example: "Movies often exaggerate the ______ of AI." },
-  
-  // Cam 17 Test 2
-  { test: "Cam 17 Test 2", vocab: "Shattering", meaning: "Vỡ nát", type: "adj", explanation: "Bị vỡ thành nhiều mảnh nhỏ hoặc gây sốc mạnh.", example: "The glass made a ______ sound when it broke." },
-  { test: "Cam 17 Test 2", vocab: "Toss", meaning: "Quăng", type: "v", explanation: "Ném nhẹ hoặc nhanh một vật.", example: "He ______ the stone into the river." },
-  { test: "Cam 17 Test 2", vocab: "Stumble upon", meaning: "Tình cờ gặp", type: "v", explanation: "Phát hiện điều gì đó một cách bất ngờ.", example: "Researchers ______ an ancient manuscript." },
-  { test: "Cam 17 Test 2", vocab: "Hebrew", meaning: "Tiếng Do Thái", type: "n", explanation: "Ngôn ngữ cổ và hiện đại của người Do Thái.", example: "The text was written in ______." },
-  { test: "Cam 17 Test 2", vocab: "Fragments", meaning: "Mảnh vỡ", type: "n", explanation: "Những phần nhỏ bị tách ra từ vật lớn.", example: "Archaeologists found ______ of pottery." },
-  { test: "Cam 17 Test 2", vocab: "Antiquities", meaning: "Cổ vật", type: "n", explanation: "Các vật có giá trị lịch sử cổ xưa.", example: "The museum displays rare ______." },
-  { test: "Cam 17 Test 2", vocab: "Bible", meaning: "Kinh thánh", type: "n", explanation: "Cuốn sách tôn giáo quan trọng của Kitô giáo.", example: "The passage comes from the ______." },
-  { test: "Cam 17 Test 2", vocab: "Acquire", meaning: "Mua / có được", type: "v", explanation: "Nhận được hoặc mua một thứ gì đó.", example: "The collector ______ rare documents." },
-  { test: "Cam 17 Test 2", vocab: "Decipher", meaning: "Giải mã", type: "v", explanation: "Hiểu hoặc giải mã văn bản khó đọc.", example: "Scholars tried to ______ the ancient script." },
-  { test: "Cam 17 Test 2", vocab: "Settlement", meaning: "Khu định cư", type: "n", explanation: "Nơi con người sinh sống.", example: "The ruins revealed an early ______." },
-  { test: "Cam 17 Test 2", vocab: "Chisel", meaning: "Đục, chạm khắc", type: "v", explanation: "Cắt hoặc khắc vật liệu cứng.", example: "Workers ______ inscriptions into stone." },
-  { test: "Cam 17 Test 2", vocab: "Withstand", meaning: "Chịu được", type: "v", explanation: "Chịu đựng áp lực hoặc điều kiện khắc nghiệt.", example: "The structure can ______ strong winds." },
-  { test: "Cam 17 Test 2", vocab: "Miscellaneous", meaning: "Khác nhau / linh tinh", type: "adj", explanation: "Bao gồm nhiều loại khác nhau.", example: "The box contained ______ items." },
-  { test: "Cam 17 Test 2", vocab: "Reassemble", meaning: "Lắp ráp lại", type: "v", explanation: "Ghép các phần lại thành một tổng thể.", example: "Experts tried to ______ the broken artifact." },
-  { test: "Cam 17 Test 2", vocab: "Resist", meaning: "Kháng cự", type: "v", explanation: "Chống lại tác động hoặc lực.", example: "Some bacteria ______ antibiotics." },
-  { test: "Cam 17 Test 2", vocab: "Infection", meaning: "Sự nhiễm trùng", type: "n", explanation: "Tình trạng vi khuẩn hoặc virus xâm nhập cơ thể.", example: "The wound developed an ______." },
-  { test: "Cam 17 Test 2", vocab: "Strain", meaning: "Chủng", type: "n", explanation: "Một biến thể của vi khuẩn hoặc virus.", example: "A new ______ of virus was identified." },
-  { test: "Cam 17 Test 2", vocab: "Devastate", meaning: "Tàn phá", type: "v", explanation: "Phá hủy nghiêm trọng.", example: "The disease ______ entire populations." },
-  { test: "Cam 17 Test 2", vocab: "Domesticate", meaning: "Thuần hóa", type: "v", explanation: "Biến động vật hoang dã thành vật nuôi.", example: "Humans began to ______ animals thousands of years ago." },
-  { test: "Cam 17 Test 2", vocab: "Obscure", meaning: "Ít người biết", type: "adj", explanation: "Không nổi tiếng hoặc khó hiểu.", example: "The theory remains ______." },
-  { test: "Cam 17 Test 2", vocab: "Mainstream", meaning: "Xu hướng chính", type: "n", explanation: "Xu hướng phổ biến trong xã hội.", example: "The idea became part of the ______." },
-  { test: "Cam 17 Test 2", vocab: "Tasty", meaning: "Ngon", type: "adj", explanation: "Có vị ngon.", example: "The dish was simple but ______." },
-  { test: "Cam 17 Test 2", vocab: "Aromatic", meaning: "Thơm", type: "adj", explanation: "Có mùi dễ chịu.", example: "The herbs gave the food an ______ smell." },
-  { test: "Cam 17 Test 2", vocab: "Tolerant", meaning: "Chịu được", type: "adj", explanation: "Có khả năng chịu đựng điều kiện.", example: "This plant is ______ to heat." },
-  { test: "Cam 17 Test 2", vocab: "Thrive", meaning: "Phát triển mạnh", type: "v", explanation: "Phát triển khỏe mạnh.", example: "Plants ______ in warm climates." },
-  { test: "Cam 17 Test 2", vocab: "Staple", meaning: "Thực phẩm chính", type: "n", explanation: "Loại thực phẩm cơ bản.", example: "Rice is a ______ food in many countries." },
-  { test: "Cam 17 Test 2", vocab: "Advisable", meaning: "Nên làm", type: "adj", explanation: "Được khuyến nghị.", example: "It is ______ to check the data carefully." },
-  { test: "Cam 17 Test 2", vocab: "Desire", meaning: "Mong muốn", type: "n", explanation: "Ước muốn mạnh mẽ.", example: "He had a strong ______ to succeed." },
-  { test: "Cam 17 Test 2", vocab: "Conventional", meaning: "Thông thường", type: "adj", explanation: "Theo cách truyền thống.", example: "This is a ______ method." },
-  { test: "Cam 17 Test 2", vocab: "Criticise", meaning: "Chỉ trích", type: "v", explanation: "Nêu ra lỗi hoặc khuyết điểm.", example: "The report was widely ______." },
-  { test: "Cam 17 Test 2", vocab: "Misrepresent", meaning: "Xuyên tạc", type: "v", explanation: "Trình bày sai sự thật.", example: "The media may ______ facts." },
-  { test: "Cam 17 Test 2", vocab: "Undermine", meaning: "Làm suy yếu", type: "v", explanation: "Làm giảm hiệu quả hoặc sức mạnh.", example: "False claims can ______ trust." },
-  { test: "Cam 17 Test 2", vocab: "Lay the foundation", meaning: "Đặt nền móng", type: "v", explanation: "Tạo cơ sở ban đầu cho điều gì.", example: "This research ______ for future studies." },
-  { test: "Cam 17 Test 2", vocab: "Jump off", meaning: "Bắt đầu", type: "v", explanation: "Khởi đầu một hoạt động.", example: "The project will ______ next week." },
-  { test: "Cam 17 Test 2", vocab: "Breakthrough", meaning: "Đột phá", type: "n", explanation: "Phát hiện quan trọng.", example: "Scientists made a major ______." },
-  { test: "Cam 17 Test 2", vocab: "Noteworthy", meaning: "Đáng chú ý", type: "adj", explanation: "Đáng được quan tâm.", example: "The results are ______." },
-  { test: "Cam 17 Test 2", vocab: "Coincide", meaning: "Trùng hợp", type: "v", explanation: "Xảy ra cùng lúc.", example: "The findings ______ with earlier studies." },
-  { test: "Cam 17 Test 2", vocab: "Vague", meaning: "Mơ hồ", type: "adj", explanation: "Không rõ ràng.", example: "His explanation was too ______." },
-  { test: "Cam 17 Test 2", vocab: "Merely", meaning: "Chỉ đơn thuần", type: "adv", explanation: "Chỉ là, không hơn.", example: "It was ______ a suggestion." },
-  { test: "Cam 17 Test 2", vocab: "Groundbreaking", meaning: "Đột phá", type: "adj", explanation: "Mang tính cách mạng.", example: "The study is ______." },
-  { test: "Cam 17 Test 2", vocab: "Provenance", meaning: "Nguồn gốc", type: "n", explanation: "Xuất xứ của vật.", example: "The artifact's ______ was unclear." },
-  { test: "Cam 17 Test 2", vocab: "Spontaneously", meaning: "Tự nhiên", type: "adv", explanation: "Không có kế hoạch trước.", example: "The reaction occurred ______." },
-  { test: "Cam 17 Test 2", vocab: "Postulate", meaning: "Giả thuyết", type: "v", explanation: "Đưa ra giả định.", example: "Scientists ______ a new theory." },
-  { test: "Cam 17 Test 2", vocab: "Serendipity", meaning: "Sự tình cờ may mắn", type: "n", explanation: "Phát hiện bất ngờ nhưng có giá trị.", example: "The discovery was pure ______." },
 
   // Cam 19 Test 1
   { test: "Cam 19 Test 1", vocab: "Publicise", meaning: "Công khai", type: "v", explanation: "Làm cho thông tin trở nên công khai và được nhiều người biết đến.", example: "The company decided to ______ its new product." },
   { test: "Cam 19 Test 1", vocab: "Subtle", meaning: "Tinh tế", type: "adj", explanation: "Khó nhận ra, không rõ ràng nhưng có ý nghĩa quan trọng.", example: "There are ______ differences between the two results." },
   { test: "Cam 19 Test 1", vocab: "Synthetic", meaning: "Tổng hợp", type: "adj", explanation: "Được tạo ra nhân tạo thay vì tự nhiên.", example: "The material is made from ______ fibers." },
   { test: "Cam 19 Test 1", vocab: "Tweak", meaning: "Điều chỉnh nhẹ", type: "v", explanation: "Thay đổi nhỏ để cải thiện hiệu suất.", example: "Engineers ______ the system to improve accuracy." },
-  { test: "Cam 19 Test 1", vocab: "Maximisation of competitive advantage", meaning: "Tối đa hoá lợi thế cạnh tranh", type: "n", explanation: "Quá trình tăng cường lợi thế để vượt đối thủ.", example: "Firms focus on ______ in global markets." },
+  { test: "Cam 19 Test 1", vocab: "Maximisation of competitive advantage", meaning: "Tối đa hoá lợi thế", type: "n", explanation: "Quá trình tăng cường lợi thế để vượt đối thủ.", example: "Firms focus on ______ in global markets." },
   { test: "Cam 19 Test 1", vocab: "Regularity", meaning: "Sự đều đặn", type: "n", explanation: "Tính lặp lại ổn định theo thời gian.", example: "Exercise should be done with ______." },
   { test: "Cam 19 Test 1", vocab: "Intestine", meaning: "Ruột", type: "n", explanation: "Cơ quan tiêu hóa giúp hấp thụ chất dinh dưỡng.", example: "Food passes through the ______ during digestion." },
   { test: "Cam 19 Test 1", vocab: "Revolutionise", meaning: "Cách mạng hoá", type: "v", explanation: "Thay đổi hoàn toàn cách một hệ thống hoạt động.", example: "Technology can ______ healthcare systems." },
@@ -351,7 +305,7 @@ const RAW_VOCAB = [
   { test: "Cam 19 Test 1", vocab: "Hilly", meaning: "Nhiều đồi", type: "adj", explanation: "Có nhiều đồi hoặc địa hình gồ ghề.", example: "The area is ______ and difficult to travel." },
   { test: "Cam 19 Test 1", vocab: "Unsurpassed", meaning: "Vô song", type: "adj", explanation: "Không ai vượt qua được.", example: "Her skill remains ______." },
   { test: "Cam 19 Test 1", vocab: "Cove", meaning: "Vịnh nhỏ", type: "n", explanation: "Một vịnh nhỏ kín gió.", example: "The boats anchored in a quiet ______." },
-  { test: "Cam 19 Test 1", vocab: "Navigable route", meaning: "Tuyến đường có thể đi lại", type: "n", explanation: "Đường mà tàu hoặc phương tiện có thể di chuyển.", example: "The river became a ______." },
+  { test: "Cam 19 Test 1", vocab: "Navigable route", meaning: "Đường đi lại được", type: "n", explanation: "Đường mà tàu hoặc phương tiện có thể di chuyển.", example: "The river became a ______." },
   { test: "Cam 19 Test 1", vocab: "Condone", meaning: "Dung túng", type: "v", explanation: "Chấp nhận hành vi sai trái.", example: "The school does not ______ cheating." },
   { test: "Cam 19 Test 1", vocab: "Glorify", meaning: "Tôn vinh", type: "v", explanation: "Ca ngợi quá mức.", example: "Movies sometimes ______ violence." },
   { test: "Cam 19 Test 1", vocab: "Tolerate", meaning: "Chịu đựng", type: "v", explanation: "Chấp nhận điều khó chịu.", example: "She cannot ______ loud noise." },
@@ -363,16 +317,16 @@ const RAW_VOCAB = [
   { test: "Cam 19 Test 1", vocab: "Eradicate", meaning: "Diệt trừ", type: "v", explanation: "Loại bỏ hoàn toàn.", example: "Efforts aim to ______ the disease." },
   { test: "Cam 19 Test 1", vocab: "Peril of something", meaning: "Nguy hiểm", type: "n", explanation: "Mối nguy hoặc rủi ro.", example: "They faced the ______ of climate change." },
   { test: "Cam 19 Test 1", vocab: "Battle falsehoods", meaning: "Chống lại sai lầm", type: "v", explanation: "Đấu tranh chống thông tin sai.", example: "Media must ______." },
-  { test: "Cam 19 Test 1", vocab: "Falsehood", meaning: "Sai lầm / thông tin sai", type: "n", explanation: "Điều không đúng sự thật.", example: "The article contained many ______." },
+  { test: "Cam 19 Test 1", vocab: "Falsehood", meaning: "Sai lầm", type: "n", explanation: "Điều không đúng sự thật.", example: "The article contained many ______." },
   { test: "Cam 19 Test 1", vocab: "Deliberate", meaning: "Cố ý", type: "v", explanation: "Thực hiện có chủ đích.", example: "The error was ______." },
   { test: "Cam 19 Test 1", vocab: "Inevitable", meaning: "Không thể tránh", type: "adj", explanation: "Chắc chắn sẽ xảy ra.", example: "Change is ______." },
   { test: "Cam 19 Test 1", vocab: "Deceive", meaning: "Lừa dối", type: "v", explanation: "Làm ai tin điều sai.", example: "The scam aimed to ______ customers." },
   { test: "Cam 19 Test 1", vocab: "Inadvertently", meaning: "Vô tình", type: "adv", explanation: "Không cố ý.", example: "He ______ revealed the secret." },
   { test: "Cam 19 Test 1", vocab: "Advertent", meaning: "Cố ý", type: "adj", explanation: "Có ý thức và chủ đích.", example: "The action was ______." },
-  { test: "Cam 19 Test 1", vocab: "Loom", meaning: "Hiện ra (đe doạ)", type: "v", explanation: "Xuất hiện một cách đáng lo.", example: "A crisis began to ______." },
+  { test: "Cam 19 Test 1", vocab: "Loom", meaning: "Hiện ra đe doạ", type: "v", explanation: "Xuất hiện một cách đáng lo.", example: "A crisis began to ______." },
   { test: "Cam 19 Test 1", vocab: "Unduly", meaning: "Quá mức", type: "adv", explanation: "Quá đáng hoặc không cần thiết.", example: "He was ______ worried." },
-  { test: "Cam 19 Test 1", vocab: "Warrant", meaning: "Đảm bảo / chứng minh", type: "v", explanation: "Biện minh cho hành động.", example: "The evidence does not ______ action." },
-  { test: "Cam 19 Test 1", vocab: "Resource-intensive effort", meaning: "Nỗ lực tốn nhiều tài nguyên", type: "n", explanation: "Hoạt động cần nhiều nguồn lực.", example: "The project is a ______." },
+  { test: "Cam 19 Test 1", vocab: "Warrant", meaning: "Đảm bảo", type: "v", explanation: "Biện minh cho hành động.", example: "The evidence does not ______ action." },
+  { test: "Cam 19 Test 1", vocab: "Resource-intensive effort", meaning: "Tốn tài nguyên", type: "n", explanation: "Hoạt động cần nhiều nguồn lực.", example: "The project is a ______." },
   { test: "Cam 19 Test 1", vocab: "Empirically", meaning: "Theo thực nghiệm", type: "adv", explanation: "Dựa trên quan sát và dữ liệu.", example: "The theory was ______ tested." },
   { test: "Cam 19 Test 1", vocab: "Skepticism", meaning: "Sự hoài nghi", type: "n", explanation: "Thái độ nghi ngờ.", example: "There was public ______ about the claim." },
   { test: "Cam 19 Test 1", vocab: "Momentarily", meaning: "Tạm thời", type: "adv", explanation: "Trong thời gian ngắn.", example: "The system failed ______." },
@@ -382,7 +336,7 @@ const RAW_VOCAB = [
   { test: "Cam 19 Test 1", vocab: "Prominence", meaning: "Sự nổi bật", type: "n", explanation: "Mức độ nổi tiếng hoặc quan trọng.", example: "The issue gained ______." },
   { test: "Cam 19 Test 1", vocab: "Sufficient", meaning: "Đủ", type: "adj", explanation: "Đáp ứng yêu cầu.", example: "There is ______ evidence." },
   { test: "Cam 19 Test 1", vocab: "Fallibility", meaning: "Khả năng mắc sai lầm", type: "n", explanation: "Khả năng phạm lỗi.", example: "Human ______ must be considered." },
-  
+
   // Cam 20 Test 1
   { test: "Cam 20 Test 1", vocab: "Nesting female", meaning: "Con cái làm tổ", type: "n", explanation: "Con cái của loài chim hoặc động vật đang xây tổ và chuẩn bị sinh sản.", example: "The ______ protects her eggs carefully in the nest." },
   { test: "Cam 20 Test 1", vocab: "Feral", meaning: "Tái hoang dã", type: "adj", explanation: "Động vật từng được thuần hóa nhưng quay lại sống hoang dã.", example: "The island had many ______ cats that threatened native birds." },
@@ -396,18 +350,18 @@ const RAW_VOCAB = [
   { test: "Cam 20 Test 1", vocab: "Conservationist", meaning: "Nhà bảo tồn", type: "n", explanation: "Người làm việc để bảo vệ môi trường và các loài sinh vật.", example: "A ______ helped save the endangered bird." },
   { test: "Cam 20 Test 1", vocab: "Relocate", meaning: "Di dời", type: "v", explanation: "Chuyển người hoặc động vật đến nơi khác.", example: "Scientists decided to ______ the birds to a safer island." },
   { test: "Cam 20 Test 1", vocab: "Expedition", meaning: "Cuộc thám hiểm", type: "n", explanation: "Chuyến đi nghiên cứu hoặc khám phá có tổ chức.", example: "The research ______ lasted two months." },
-  { test: "Cam 20 Test 1", vocab: "Predator-free", meaning: "Không có động vật săn mồi", type: "adj", explanation: "Khu vực không có loài săn mồi.", example: "The birds were moved to a ______ island." },
+  { test: "Cam 20 Test 1", vocab: "Predator-free", meaning: "Không thú săn mồi", type: "adj", explanation: "Khu vực không có loài săn mồi.", example: "The birds were moved to a ______ island." },
   { test: "Cam 20 Test 1", vocab: "Offset", meaning: "Bù đắp", type: "v", explanation: "Giảm tác động tiêu cực bằng cách cân bằng với yếu tố khác.", example: "Protection efforts helped ______ population loss." },
   { test: "Cam 20 Test 1", vocab: "Mortality", meaning: "Tỷ lệ tử vong", type: "n", explanation: "Tỷ lệ số cá thể chết trong một quần thể.", example: "Predators increased chick ______." },
   { test: "Cam 20 Test 1", vocab: "Eradicate", meaning: "Tiêu diệt hoàn toàn", type: "v", explanation: "Loại bỏ hoàn toàn một loài hoặc vấn đề.", example: "Authorities tried to ______ invasive rats." },
-  { test: "Cam 20 Test 1", vocab: "Hand-raising", meaning: "Nuôi dưỡng bằng tay", type: "n", explanation: "Nuôi con non trực tiếp bởi con người.", example: "Some chicks survived because of ______." },
+  { test: "Cam 20 Test 1", vocab: "Hand-raising", meaning: "Nuôi bằng tay", type: "n", explanation: "Nuôi con non trực tiếp bởi con người.", example: "Some chicks survived because of ______." },
   { test: "Cam 20 Test 1", vocab: "Genetic diversity", meaning: "Đa dạng di truyền", type: "n", explanation: "Sự đa dạng về gen trong quần thể.", example: "Maintaining ______ helps species survive." },
   { test: "Cam 20 Test 1", vocab: "Supplementary feeding", meaning: "Cho ăn bổ sung", type: "n", explanation: "Cung cấp thức ăn thêm để hỗ trợ động vật.", example: "Researchers introduced ______ to increase breeding success." },
   { test: "Cam 20 Test 1", vocab: "Cautious optimism", meaning: "Lạc quan thận trọng", type: "n", explanation: "Hy vọng nhưng vẫn giữ thái độ cẩn trọng.", example: "Scientists expressed ______ about recovery." },
   { test: "Cam 20 Test 1", vocab: "Arise from", meaning: "Phát sinh từ", type: "v", explanation: "Bắt nguồn từ điều gì đó.", example: "The problem may ______ climate change." },
-  { test: "Cam 20 Test 1", vocab: "Reintroduce", meaning: "Tái thả vào tự nhiên", type: "v", explanation: "Đưa một loài trở lại môi trường tự nhiên.", example: "Scientists hope to ______ the species." },
+  { test: "Cam 20 Test 1", vocab: "Reintroduce", meaning: "Tái thả", type: "v", explanation: "Đưa một loài trở lại môi trường tự nhiên.", example: "Scientists hope to ______ the species." },
   { test: "Cam 20 Test 1", vocab: "Bring into", meaning: "Đưa vào", type: "v", explanation: "Đưa một yếu tố hoặc ý tưởng vào hệ thống.", example: "The project aims to ______ new conservation methods." },
-  { test: "Cam 20 Test 1", vocab: "Vulnerable", meaning: "Dễ bị tổn thương", type: "adj", explanation: "Có khả năng bị hại hoặc bị ảnh hưởng.", example: "Young trees are ______ to disease." },
+  { test: "Cam 20 Test 1", vocab: "Vulnerable", meaning: "Dễ tổn thương", type: "adj", explanation: "Có khả năng bị hại hoặc bị ảnh hưởng.", example: "Young trees are ______ to disease." },
   { test: "Cam 20 Test 1", vocab: "Flourish", meaning: "Phát triển mạnh", type: "v", explanation: "Phát triển khỏe mạnh và thành công.", example: "Plants ______ in the restored habitat." },
   { test: "Cam 20 Test 1", vocab: "Prominent", meaning: "Nổi bật", type: "adj", explanation: "Dễ thấy hoặc quan trọng.", example: "The scientist became a ______ figure in conservation." },
   { test: "Cam 20 Test 1", vocab: "Epidemic", meaning: "Dịch bệnh", type: "n", explanation: "Bệnh lan nhanh trong quần thể.", example: "An ______ destroyed many trees." },
@@ -417,13 +371,13 @@ const RAW_VOCAB = [
   { test: "Cam 20 Test 1", vocab: "Resistant", meaning: "Có sức đề kháng", type: "adj", explanation: "Có khả năng chống lại bệnh.", example: "Scientists developed ______ trees." },
   { test: "Cam 20 Test 1", vocab: "Hybrid strain", meaning: "Chủng lai", type: "n", explanation: "Giống được tạo ra từ lai giữa hai giống.", example: "A ______ may survive the disease." },
   { test: "Cam 20 Test 1", vocab: "Advocate", meaning: "Người ủng hộ", type: "n", explanation: "Người công khai ủng hộ một ý tưởng.", example: "Environmental ______ supported the project." },
-  { test: "Cam 20 Test 1", vocab: "Social acceptance", meaning: "Sự chấp nhận xã hội", type: "n", explanation: "Mức độ xã hội chấp nhận một ý tưởng.", example: "The plan requires public ______." },
-  { test: "Cam 20 Test 1", vocab: "Raise questions", meaning: "Đặt ra câu hỏi", type: "v", explanation: "Gợi lên sự nghi ngờ hoặc thắc mắc.", example: "The proposal ______ about safety." },
+  { test: "Cam 20 Test 1", vocab: "Social acceptance", meaning: "Chấp nhận xã hội", type: "n", explanation: "Mức độ xã hội chấp nhận một ý tưởng.", example: "The plan requires public ______." },
+  { test: "Cam 20 Test 1", vocab: "Raise questions", meaning: "Đặt câu hỏi", type: "v", explanation: "Gợi lên sự nghi ngờ hoặc thắc mắc.", example: "The proposal ______ about safety." },
   { test: "Cam 20 Test 1", vocab: "Acknowledge", meaning: "Thừa nhận", type: "v", explanation: "Công nhận điều gì đó là đúng.", example: "Researchers ______ the risks." },
   { test: "Cam 20 Test 1", vocab: "Wary", meaning: "Thận trọng", type: "adj", explanation: "Cẩn thận vì có thể có nguy hiểm.", example: "The public remains ______ about cloning." },
-  { test: "Cam 20 Test 1", vocab: "Cloning", meaning: "Nhân bản vô tính", type: "n", explanation: "Tạo bản sao di truyền giống hệt.", example: "Scientists debate the ethics of ______." },
+  { test: "Cam 20 Test 1", vocab: "Cloning", meaning: "Nhân bản", type: "n", explanation: "Tạo bản sao di truyền giống hệt.", example: "Scientists debate the ethics of ______." },
   { test: "Cam 20 Test 1", vocab: "Widely held assumption", meaning: "Giả định phổ biến", type: "n", explanation: "Niềm tin được nhiều người chấp nhận.", example: "A ______ is that stress harms decision-making." },
-  { test: "Cam 20 Test 1", vocab: "Stress levels", meaning: "Mức độ căng thẳng", type: "n", explanation: "Mức độ áp lực tâm lý.", example: "High ______ affect judgement." },
+  { test: "Cam 20 Test 1", vocab: "Stress levels", meaning: "Căng thẳng", type: "n", explanation: "Mức độ áp lực tâm lý.", example: "High ______ affect judgement." },
   { test: "Cam 20 Test 1", vocab: "Handle stress", meaning: "Xử lý căng thẳng", type: "v", explanation: "Đối phó với áp lực.", example: "Some professions must ______ daily." },
   { test: "Cam 20 Test 1", vocab: "Methodology", meaning: "Phương pháp luận", type: "n", explanation: "Hệ thống phương pháp nghiên cứu.", example: "The research ______ was carefully designed." },
   { test: "Cam 20 Test 1", vocab: "Mechanism", meaning: "Cơ chế", type: "n", explanation: "Quá trình khiến điều gì xảy ra.", example: "Scientists examined the brain ______." },
@@ -443,69 +397,72 @@ const RAW_VOCAB = [
   { test: "Cam 20 Test 2", vocab: "Regulate", meaning: "Điều chỉnh", type: "v", explanation: "Kiểm soát hoặc duy trì ở mức ổn định.", example: "Marine mammals must ______ their body temperature." },
   { test: "Cam 20 Test 2", vocab: "Muscles of diaphragm", meaning: "Cơ hoành", type: "n", explanation: "Cơ quan giúp kiểm soát quá trình hô hấp.", example: "The ______ contract during breathing." },
   { test: "Cam 20 Test 2", vocab: "Manatee", meaning: "Lợn biển", type: "n", explanation: "Một loài động vật có vú sống dưới nước lớn, ăn cỏ.", example: "The ______ is often called a sea cow." },
-  { test: "Cam 20 Test 2", vocab: "Aquatic habitat", meaning: "Môi trường sống dưới nước", type: "n", explanation: "Môi trường sống của sinh vật trong nước.", example: "Rivers provide an ideal ______." },
-  { test: "Cam 20 Test 2", vocab: "Coastal waters", meaning: "Vùng nước ven biển", type: "n", explanation: "Khu vực biển gần bờ.", example: "Manatees are often found in warm ______." },
+  { test: "Cam 20 Test 2", vocab: "Aquatic habitat", meaning: "Môi trường sống", type: "n", explanation: "Môi trường sống của sinh vật trong nước.", example: "Rivers provide an ideal ______." },
+  { test: "Cam 20 Test 2", vocab: "Coastal waters", meaning: "Nước ven biển", type: "n", explanation: "Khu vực biển gần bờ.", example: "Manatees are often found in warm ______." },
   { test: "Cam 20 Test 2", vocab: "Extent", meaning: "Mức độ", type: "n", explanation: "Mức độ hoặc phạm vi của điều gì đó.", example: "Scientists studied the ______ of pollution." },
   { test: "Cam 20 Test 2", vocab: "Entanglement", meaning: "Sự vướng vào", type: "n", explanation: "Bị mắc hoặc vướng vào vật gì đó.", example: "Fishing nets cause dangerous ______." },
-  { test: "Cam 20 Test 2", vocab: "Plastic consumption", meaning: "Sự tiêu thụ nhựa", type: "n", explanation: "Việc động vật ăn phải nhựa.", example: "Marine animals suffer from ______." },
+  { test: "Cam 20 Test 2", vocab: "Plastic consumption", meaning: "Tiêu thụ nhựa", type: "n", explanation: "Việc động vật ăn phải nhựa.", example: "Marine animals suffer from ______." },
   { test: "Cam 20 Test 2", vocab: "Legislation", meaning: "Pháp luật", type: "n", explanation: "Luật được ban hành bởi chính phủ.", example: "New ______ protects endangered species." },
-  { test: "Cam 20 Test 2", vocab: "Boat strikes", meaning: "Va chạm với tàu thuyền", type: "n", explanation: "Tai nạn khi tàu đâm vào động vật biển.", example: "Many manatees die from ______." },
-  { test: "Cam 20 Test 2", vocab: "Aquatic mammals", meaning: "Động vật có vú sống dưới nước", type: "n", explanation: "Động vật có vú thích nghi với môi trường nước.", example: "Dolphins and whales are ______." },
-  { test: "Cam 20 Test 2", vocab: "Flexible flippers", meaning: "Chân chèo linh hoạt", type: "n", explanation: "Chi trước của động vật biển dùng để bơi.", example: "Seals move easily using their ______." },
+  { test: "Cam 20 Test 2", vocab: "Boat strikes", meaning: "Va chạm tàu", type: "n", explanation: "Tai nạn khi tàu đâm vào động vật biển.", example: "Many manatees die from ______." },
+  { test: "Cam 20 Test 2", vocab: "Aquatic mammals", meaning: "ĐV có vú dưới nước", type: "n", explanation: "Động vật có vú thích nghi với môi trường nước.", example: "Dolphins and whales are ______." },
+  { test: "Cam 20 Test 2", vocab: "Flexible flippers", meaning: "Chân chèo", type: "n", explanation: "Chi trước của động vật biển dùng để bơi.", example: "Seals move easily using their ______." },
   { test: "Cam 20 Test 2", vocab: "Tail for propulsion", meaning: "Đuôi để đẩy", type: "n", explanation: "Đuôi được dùng để tạo lực đẩy khi bơi.", example: "The animal uses its ______ to swim." },
   { test: "Cam 20 Test 2", vocab: "Herbivores", meaning: "Động vật ăn cỏ", type: "n", explanation: "Động vật chỉ ăn thực vật.", example: "Manatees are gentle ______." },
   { test: "Cam 20 Test 2", vocab: "Omnivorous", meaning: "Ăn tạp", type: "adj", explanation: "Ăn cả thực vật và động vật.", example: "Bears are ______ animals." },
   { test: "Cam 20 Test 2", vocab: "Molars", meaning: "Răng hàm", type: "n", explanation: "Răng lớn dùng để nghiền thức ăn.", example: "Herbivores use ______ to grind plants." },
-  { test: "Cam 20 Test 2", vocab: "Abrasive diet", meaning: "Chế độ ăn dễ mài mòn", type: "n", explanation: "Chế độ ăn khiến răng bị mòn theo thời gian.", example: "Grass creates an ______." },
+  { test: "Cam 20 Test 2", vocab: "Abrasive diet", meaning: "Chế độ ăn mài mòn", type: "n", explanation: "Chế độ ăn khiến răng bị mòn theo thời gian.", example: "Grass creates an ______." },
   { test: "Cam 20 Test 2", vocab: "Buoyancy", meaning: "Sự nổi", type: "n", explanation: "Khả năng nổi trong nước.", example: "Fat helps marine animals maintain ______." },
   { test: "Cam 20 Test 2", vocab: "Subspecies", meaning: "Phân loài", type: "n", explanation: "Nhóm nhỏ hơn trong một loài.", example: "Scientists identified a new ______." },
-  { test: "Cam 20 Test 2", vocab: "Ambient water temperature", meaning: "Nhiệt độ nước môi trường", type: "n", explanation: "Nhiệt độ tự nhiên của nước xung quanh.", example: "Manatees depend on warm ______." },
-  { test: "Cam 20 Test 2", vocab: "Artificially warmed water", meaning: "Nước được làm ấm nhân tạo", type: "n", explanation: "Nước được làm nóng bởi hoạt động con người.", example: "Power plants release ______." },
+  { test: "Cam 20 Test 2", vocab: "Ambient water temperature", meaning: "Nhiệt độ nước", type: "n", explanation: "Nhiệt độ tự nhiên của nước xung quanh.", example: "Manatees depend on warm ______." },
+  { test: "Cam 20 Test 2", vocab: "Artificially warmed water", meaning: "Nước ấm nhân tạo", type: "n", explanation: "Nước được làm nóng bởi hoạt động con người.", example: "Power plants release ______." },
   { test: "Cam 20 Test 2", vocab: "Put off", meaning: "Trì hoãn", type: "v", explanation: "Hoãn việc gì sang thời điểm sau.", example: "Students often ______ difficult tasks." },
-  { test: "Cam 20 Test 2", vocab: "Berate oneself", meaning: "Tự trách bản thân", type: "v", explanation: "Chỉ trích bản thân vì lỗi lầm.", example: "People ______ after procrastinating." },
+  { test: "Cam 20 Test 2", vocab: "Berate oneself", meaning: "Tự trách", type: "v", explanation: "Chỉ trích bản thân vì lỗi lầm.", example: "People ______ after procrastinating." },
   { test: "Cam 20 Test 2", vocab: "Mood management", meaning: "Quản lý tâm trạng", type: "n", explanation: "Kiểm soát cảm xúc để duy trì trạng thái tích cực.", example: "Procrastination relates to ______." },
   { test: "Cam 20 Test 2", vocab: "Self-worth", meaning: "Giá trị bản thân", type: "n", explanation: "Mức độ một người coi trọng bản thân.", example: "Failure may affect ______." },
   { test: "Cam 20 Test 2", vocab: "Emotion regulation", meaning: "Điều tiết cảm xúc", type: "n", explanation: "Khả năng kiểm soát cảm xúc.", example: "Procrastination weakens ______." },
   { test: "Cam 20 Test 2", vocab: "Self-esteem", meaning: "Lòng tự trọng", type: "n", explanation: "Mức độ tôn trọng bản thân.", example: "Healthy ______ improves motivation." },
   { test: "Cam 20 Test 2", vocab: "Perfectionist", meaning: "Người cầu toàn", type: "n", explanation: "Người luôn muốn mọi thứ hoàn hảo.", example: "A ______ may delay tasks." },
   { test: "Cam 20 Test 2", vocab: "Conditioned", meaning: "Hình thành thói quen", type: "adj", explanation: "Được hình thành qua quá trình học hoặc lặp lại.", example: "Behavior becomes ______ over time." },
-  { test: "Cam 20 Test 2", vocab: "Mood boost", meaning: "Sự cải thiện tâm trạng", type: "n", explanation: "Điều làm tâm trạng tốt hơn.", example: "Watching videos gives a quick ______." },
-  { test: "Cam 20 Test 2", vocab: "Fraudulent excuse", meaning: "Lời bào chữa gian dối", type: "n", explanation: "Lý do không trung thực để biện minh.", example: "He gave a ______ for missing work." },
-  { test: "Cam 20 Test 2", vocab: "Misconduct", meaning: "Hành vi sai trái", type: "n", explanation: "Hành vi vi phạm quy tắc.", example: "Academic ______ leads to punishment." },
+  { test: "Cam 20 Test 2", vocab: "Mood boost", meaning: "Cải thiện tâm trạng", type: "n", explanation: "Điều làm tâm trạng tốt hơn.", example: "Watching videos gives a quick ______." },
+  { test: "Cam 20 Test 2", vocab: "Fraudulent excuse", meaning: "Lời bào chữa", type: "n", explanation: "Lý do không trung thực để biện minh.", example: "He gave a ______ for missing work." },
+  { test: "Cam 20 Test 2", vocab: "Misconduct", meaning: "Hành vi sai", type: "n", explanation: "Hành vi vi phạm quy tắc.", example: "Academic ______ leads to punishment." },
   { test: "Cam 20 Test 2", vocab: "Correlate", meaning: "Có tương quan", type: "v", explanation: "Có mối liên hệ thống kê.", example: "Stress levels ______ procrastination." },
   { test: "Cam 20 Test 2", vocab: "Coping strategies", meaning: "Chiến lược đối phó", type: "n", explanation: "Phương pháp xử lý khó khăn.", example: "Students develop ______ for stress." },
   { test: "Cam 20 Test 2", vocab: "Vicious cycle", meaning: "Vòng luẩn quẩn", type: "n", explanation: "Chuỗi sự kiện tiêu cực lặp lại.", example: "Delay creates a ______." },
-  { test: "Cam 20 Test 2", vocab: "Fend off distractions", meaning: "Tránh xa sự xao nhãng", type: "v", explanation: "Ngăn chặn các yếu tố gây mất tập trung.", example: "Students must ______." },
-  { test: "Cam 20 Test 2", vocab: "Self-compassion", meaning: "Lòng trắc ẩn với bản thân", type: "n", explanation: "Đối xử tử tế với chính mình khi mắc lỗi.", example: "Practicing ______ reduces guilt." },
-  { test: "Cam 20 Test 2", vocab: "Get back on track", meaning: "Quay lại đúng hướng", type: "v", explanation: "Tiếp tục thực hiện mục tiêu ban đầu.", example: "Small steps help you ______." },
-  { test: "Cam 20 Test 2", vocab: "False assumptions", meaning: "Giả định sai lầm", type: "n", explanation: "Niềm tin không chính xác.", example: "Procrastination often comes from ______." },
+  { test: "Cam 20 Test 2", vocab: "Fend off distractions", meaning: "Tránh xao nhãng", type: "v", explanation: "Ngăn chặn các yếu tố gây mất tập trung.", example: "Students must ______." },
+  { test: "Cam 20 Test 2", vocab: "Self-compassion", meaning: "Lòng trắc ẩn", type: "n", explanation: "Đối xử tử tế với chính mình khi mắc lỗi.", example: "Practicing ______ reduces guilt." },
+  { test: "Cam 20 Test 2", vocab: "Get back on track", meaning: "Đúng hướng", type: "v", explanation: "Tiếp tục thực hiện mục tiêu ban đầu.", example: "Small steps help you ______." },
+  { test: "Cam 20 Test 2", vocab: "False assumptions", meaning: "Giả định sai", type: "n", explanation: "Niềm tin không chính xác.", example: "Procrastination often comes from ______." },
   { test: "Cam 20 Test 2", vocab: "Identify", meaning: "Xác định", type: "v", explanation: "Nhận ra hoặc xác định rõ.", example: "Researchers ______ causes of delay." },
   { test: "Cam 20 Test 2", vocab: "Umpire", meaning: "Trọng tài", type: "n", explanation: "Người đưa ra quyết định trong trận đấu.", example: "The ______ called the pitch a strike." },
-  { test: "Cam 20 Test 2", vocab: "Automated ball-strike system", meaning: "Hệ thống tự động xác định bóng/strike", type: "n", explanation: "Công nghệ AI xác định pitch trong bóng chày.", example: "MLB tested the ______." },
+  { test: "Cam 20 Test 2", vocab: "Automated ball-strike system", meaning: "Hệ thống bóng tự động", type: "n", explanation: "Công nghệ AI xác định pitch trong bóng chày.", example: "MLB tested the ______." },
   { test: "Cam 20 Test 2", vocab: "Strike zone", meaning: "Vùng strike", type: "n", explanation: "Khu vực pitch được tính là strike.", example: "The ball crossed the ______." },
-  { test: "Cam 20 Test 2", vocab: "Judgment call", meaning: "Quyết định dựa trên phán đoán", type: "n", explanation: "Quyết định dựa trên đánh giá chủ quan.", example: "The umpire made a ______." },
+  { test: "Cam 20 Test 2", vocab: "Judgment call", meaning: "Phán đoán", type: "n", explanation: "Quyết định dựa trên đánh giá chủ quan.", example: "The umpire made a ______." },
   { test: "Cam 20 Test 2", vocab: "Controversy", meaning: "Tranh cãi", type: "n", explanation: "Bất đồng ý kiến công khai.", example: "The decision caused ______." },
   { test: "Cam 20 Test 2", vocab: "Algorithm", meaning: "Thuật toán", type: "n", explanation: "Tập hợp quy tắc để xử lý dữ liệu.", example: "The system uses an ______." },
   { test: "Cam 20 Test 2", vocab: "Consensus", meaning: "Sự đồng thuận", type: "n", explanation: "Sự đồng ý chung.", example: "Experts reached a ______." },
   { test: "Cam 20 Test 2", vocab: "Decision-making", meaning: "Sự ra quyết định", type: "n", explanation: "Quá trình chọn lựa phương án.", example: "AI assists human ______." },
   { test: "Cam 20 Test 2", vocab: "Amend", meaning: "Chỉnh sửa", type: "v", explanation: "Thay đổi hoặc cải thiện.", example: "The league may ______ the rules." },
   { test: "Cam 20 Test 2", vocab: "Subjective assessment", meaning: "Đánh giá chủ quan", type: "n", explanation: "Đánh giá dựa trên ý kiến cá nhân.", example: "Human umpires rely on ______." },
-  { test: "Cam 20 Test 2", vocab: "Widespread approval", meaning: "Sự chấp thuận rộng rãi", type: "n", explanation: "Được nhiều người đồng ý.", example: "The new system gained ______." },
+  { test: "Cam 20 Test 2", vocab: "Widespread approval", meaning: "Chấp thuận rộng", type: "n", explanation: "Được nhiều người đồng ý.", example: "The new system gained ______." },
   { test: "Cam 20 Test 2", vocab: "Keep up with", meaning: "Bắt kịp", type: "v", explanation: "Theo kịp sự thay đổi.", example: "Sports must ______ technology." },
   { test: "Cam 20 Test 2", vocab: "Changing attitudes", meaning: "Thái độ thay đổi", type: "n", explanation: "Quan điểm của xã hội thay đổi.", example: "The reform reflects ______." },
   { test: "Cam 20 Test 2", vocab: "Retain a young audience", meaning: "Giữ chân khán giả trẻ", type: "v", explanation: "Thu hút người xem trẻ.", example: "Leagues want to ______." },
-  { test: "Cam 20 Test 2", vocab: "Enjoyment", meaning: "Sự thích thú", type: "n", explanation: "Cảm giác vui vẻ khi làm điều gì.", example: "Technology may increase fan ______." }
+  { test: "Cam 20 Test 2", vocab: "Enjoyment", meaning: "Sự thích thú", type: "n", explanation: "Cảm giác vui vẻ khi làm điều gì.", example: "Technology may increase fan ______." },
+  { test: "Cam 20 Test 2", vocab: "Generalize", meaning: "Nói chung chung", type: "v", explanation: "Rút ra kết luận chung từ một số trường hợp.", example: "Don’t ______ from one bad experience." },
+  { test: "Cam 20 Test 2", vocab: "Retaliation", meaning: "Trả thù", type: "n", explanation: "Hành động đáp trả để gây hại lại sau khi bị đối xử tệ.", example: "The company prohibits ______ in the workplace." },
+  { test: "Cam 20 Test 2", vocab: "Conventional", meaning: "Thông thường", type: "adj", explanation: "Theo cách truyền thống, phổ biến và được chấp nhận rộng rãi.", example: "They chose a ______ approach instead of taking risks." }
 ];
 
 const GAME_MODES = ['ENG_VN', 'VN_ENG', 'GAP_FILL', 'MISSING_CHARS'];
 
-// Cấu hình thời gian lặp lại của Spaced Repetition (SRS) theo đúng PDF
+// Cấu hình thời gian lặp lại của Spaced Repetition (SRS) 
 const SRS_INTERVALS = {
   1: 24 * 60 * 60 * 1000,     // Level 1 -> Level 2: Chờ 24 giờ
   2: 48 * 60 * 60 * 1000,     // Level 2 -> Level 3: Chờ 48 giờ
   3: 7 * 24 * 60 * 60 * 1000, // Level 3 -> Level 4: Chờ 1 tuần (168h)
   4: 14 * 24 * 60 * 60 * 1000,// Level 4 -> Level 5: Chờ 2 tuần (336h)
-  5: 28 * 24 * 60 * 60 * 1000 // Level 5: Ôn lại sau 4 tuần
+  5: 28 * 24 * 60 * 60 * 1000 // Level 5: Ôn lại sau 4 tuần 
 };
 
 const App = () => {
@@ -530,7 +487,7 @@ const App = () => {
   // Modals state
   const [showExitConfirm, setShowExitConfirm] = useState(false);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
-  const [showDoneConfirm, setShowDoneConfirm] = useState(false); // Modal chuyên biệt cho nút Done - Thoát
+  const [showDoneConfirm, setShowDoneConfirm] = useState(false); 
 
   // Thêm tính năng phím tắt (Keyboard shortcuts)
   useEffect(() => {
@@ -591,6 +548,7 @@ const App = () => {
   }, []);
 
   // Tính thống kê chi tiết cho TỪNG LEVEL của SRS (0 đến 5)
+  // Đây là hàm giúp phân loại chính xác số lượng từ vào 6 ô (Chưa học, L1, L2...)
   const srsStatsByLevel = useMemo(() => {
     const stats = {
       0: { total: 0, available: 0, minTime: Infinity },
@@ -603,9 +561,14 @@ const App = () => {
 
     RAW_VOCAB.forEach(word => {
       const prog = vocabProgress[word.vocab];
-      const lvl = prog ? prog.level : 0;
       
-      const safeLvl = Math.min(Math.max(lvl, 0), 5);
+      // Logic lọc chặt chẽ: Chỉ khi chưa từng học (undef) HOẶC level=0 thì mới về level 0.
+      // Còn lại sẽ map đúng vào level tương ứng (tối đa là 5)
+      let safeLvl = 0;
+      if (prog && prog.level >= 1) {
+        safeLvl = Math.min(prog.level, 5);
+      }
+      
       stats[safeLvl].total++;
 
       if (!prog || prog.nextReview <= now) {
@@ -620,6 +583,7 @@ const App = () => {
     return stats;
   }, [vocabProgress, now]);
 
+  // Hàm chuyển đổi thời gian dạng số (ms) sang dạng Text ngắn gọn (ví dụ: 2d 4h)
   const formatCountdownShort = (ms) => {
     if (ms <= 0) return "";
     const totalSeconds = Math.floor(ms / 1000);
@@ -633,12 +597,17 @@ const App = () => {
     return `${m}m ${s}s`;
   };
 
+  // Hàm chuyển đổi thời gian sang dạng Text đầy đủ (ví dụ: 2 ngày 04:30:00)
   const formatCountdownFull = (ms) => {
     if (ms <= 0) return "00:00:00";
     const totalSeconds = Math.floor(ms / 1000);
-    const h = Math.floor(totalSeconds / 3600);
+    const d = Math.floor(totalSeconds / 86400);
+    const h = Math.floor((totalSeconds % 86400) / 3600);
     const m = Math.floor((totalSeconds % 3600) / 60);
     const s = totalSeconds % 60;
+    if (d > 0) {
+      return `${d} ngày ${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+    }
     return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
   };
   
@@ -688,7 +657,12 @@ const App = () => {
   const initSRS = (levelToLearn) => {
     const availableWords = RAW_VOCAB.filter(w => {
       const prog = vocabProgress[w.vocab];
-      const lvl = prog ? prog.level : 0;
+      // Tuân thủ triệt để logic "Từ chưa học" (level 0) và "Đã học" (level >= 1)
+      let lvl = 0;
+      if (prog && prog.level >= 1) {
+        lvl = Math.min(prog.level, 5);
+      }
+
       if (lvl !== levelToLearn) return false;
       return !prog || prog.nextReview <= Date.now();
     });
@@ -790,14 +764,17 @@ const App = () => {
   };
 
   const nextQuestion = () => {
-    // Ép câu hỏi này lặp lại ở cuối danh sách nếu sai
+    let nextLength = questions.length; // Đồng bộ chiều dài câu hỏi để check EndGame
+
+    // Ép câu hỏi này lặp lại ở cuối danh sách nếu trả lời sai (Áp dụng cho mọi mode)
     if (['PLAYING_FREE', 'PLAYING_TEST', 'PLAYING_SUPER_MEMORY', 'PLAYING_SRS'].includes(gameState) && feedback && !feedback.isCorrect) {
       const wordObj = RAW_VOCAB.find(w => w.vocab === questions[currentStep].vocab);
       const forcedMode = gameState === 'PLAYING_SUPER_MEMORY' ? 'SUPER_MEMORY' : null;
       setQuestions(prev => [...prev, generateQuestion(wordObj, forcedMode)]);
+      nextLength++; 
     }
 
-    if (currentStep < questions.length - 1) {
+    if (currentStep < nextLength - 1) {
       setCurrentStep(s => s + 1);
       setSelectedAnswer(null);
       setHoveredOption(null);
@@ -815,13 +792,12 @@ const App = () => {
   };
 
   // Hàm xử lý cốt lõi của SRS (Dùng chung cho lúc hoàn thành HOẶC bấm Done thoát)
+  // Sử dụng Functional Update để tránh lỗi Stale State
   const processProgress = () => {
     if (sessionResults.length === 0) return;
-    
-    const newProgress = { ...vocabProgress };
     const currentTime = Date.now();
 
-    // Nhóm kết quả: Xác định xem từ đó có làm đúng toàn bộ trong phiên không (hay từng bị sai)
+    // Nhóm kết quả: Xác định xem từ đó có làm đúng toàn bộ trong phiên không (hay từng bị sai ít nhất 1 lần)
     const wordStatus = {};
     sessionResults.forEach(res => {
       if (wordStatus[res.vocab] === undefined) {
@@ -831,35 +807,45 @@ const App = () => {
       }
     });
 
-    Object.keys(wordStatus).forEach(vocab => {
-      const currentLevel = newProgress[vocab]?.level || 0;
-      const passedCleanly = wordStatus[vocab].allCorrect;
+    setVocabProgress(prevProgress => {
+      const newProgress = { ...prevProgress };
       
-      let nextLevel;
-      let nextReview;
-      
-      if (passedCleanly) {
-        // Làm đúng ngay từ đầu -> Lên cấp
-        nextLevel = Math.min(currentLevel + 1, 5);
-        nextReview = currentTime + (SRS_INTERVALS[nextLevel] || Infinity);
-      } else {
-        // Có ít nhất 1 lần sai -> Rớt về Level 1 (hoặc giữ L1 nếu đang là 1/0)
-        nextLevel = 1;
-        nextReview = currentTime + SRS_INTERVALS[1];
-      }
+      Object.keys(wordStatus).forEach(vocab => {
+        const currentLevel = newProgress[vocab]?.level || 0;
+        const passedCleanly = wordStatus[vocab].allCorrect;
+        
+        let nextLevel;
+        let nextReview;
+        
+        if (passedCleanly) {
+          // Làm đúng ngay từ đầu -> Được phép Lên cấp
+          nextLevel = Math.min(currentLevel + 1, 5);
+          nextReview = currentTime + (SRS_INTERVALS[nextLevel] || Infinity);
+        } else {
+          // Có ít nhất 1 lần sai -> Bị trừng phạt:
+          // Nếu chưa học (0) thì vẫn ở 0 để học tiếp. Nếu đã lên cấp (1-5) thì rớt xuống lại Level 1.
+          if (currentLevel === 0) {
+            nextLevel = 0;
+            nextReview = 0;
+          } else {
+            nextLevel = 1;
+            nextReview = currentTime + SRS_INTERVALS[1];
+          }
+        }
 
-      newProgress[vocab] = {
-        level: nextLevel,
-        nextReview: nextReview
-      };
+        newProgress[vocab] = {
+          level: nextLevel,
+          nextReview: nextReview
+        };
+      });
+
+      try {
+        localStorage.setItem('trung_vocab_progress', JSON.stringify(newProgress));
+      } catch (e) {}
+
+      return newProgress;
     });
 
-    setVocabProgress(newProgress);
-    try {
-      localStorage.setItem('trung_vocab_progress', JSON.stringify(newProgress));
-    } catch (e) {
-      console.warn("Lỗi lưu dữ liệu local storage.");
-    }
     setNow(Date.now());
   };
 
@@ -1134,24 +1120,37 @@ const App = () => {
 
   // Kết thúc SRS
   if (gameState === 'FINISHED_SRS') {
-    const correctAnswers = sessionResults.filter(r => r.isCorrect).length;
+    const srsWordStatus = {};
+    sessionResults.forEach(res => {
+      if (srsWordStatus[res.vocab] === undefined) {
+        srsWordStatus[res.vocab] = res.isCorrect;
+      } else {
+        if (!res.isCorrect) srsWordStatus[res.vocab] = false;
+      }
+    });
+    const uniqueWordsCount = Object.keys(srsWordStatus).length;
+    const leveledUpCount = Object.values(srsWordStatus).filter(v => v).length;
+    const droppedCount = uniqueWordsCount - leveledUpCount;
+
     return (
       <div className="min-h-screen bg-yellow-50 flex flex-col items-center justify-center p-4">
         <div className="bg-white rounded-3xl shadow-xl p-8 max-w-md w-full text-center border-b-8 border-yellow-200">
           <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <Trophy className="w-10 h-10 text-green-500" />
           </div>
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Kết thúc phiên học SRS!</h2>
-          <div className="text-5xl font-black text-yellow-500 mb-2">{Math.round((correctAnswers / questions.length) * 100)}%</div>
-          <p className="text-gray-600 mb-6 font-medium">Bạn đã trả lời đúng {correctAnswers}/{questions.length} câu hỏi.</p>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Hoàn thành phiên SRS!</h2>
+          <div className="text-5xl font-black text-yellow-500 mb-2">100%</div>
+          <p className="text-gray-600 mb-6 font-medium">Bạn đã ôn xong {uniqueWordsCount} từ vựng.</p>
           
           <div className="bg-gray-50 rounded-xl p-4 mb-8 text-sm text-gray-600 text-left space-y-2">
             <p className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-green-500" /> {correctAnswers} từ được thăng cấp (Level Up).
+              <Check className="w-4 h-4 text-green-500" /> <b>{leveledUpCount}</b> từ vựng được thăng cấp (Level Up).
             </p>
-            <p className="flex items-center gap-2 text-red-500 font-medium">
-              <X className="w-4 h-4" /> {questions.length - correctAnswers} từ sai đã bị rớt Level.
-            </p>
+            {droppedCount > 0 && (
+              <p className="flex items-center gap-2 text-red-500 font-medium">
+                <X className="w-4 h-4" /> <b>{droppedCount}</b> từ sai đã bị rớt (hoặc giữ) Level.
+              </p>
+            )}
           </div>
 
           <button 
@@ -1453,8 +1452,8 @@ const App = () => {
               <div className="flex-1">
                 <h4 className="font-bold text-lg">
                   {feedback.isCorrect 
-                    ? (gameState === 'PLAYING_SRS' ? 'Chính xác! Đã lưu kết quả.' : 'Chính xác!') 
-                    : (['PLAYING_FREE', 'PLAYING_TEST', 'PLAYING_SUPER_MEMORY'].includes(gameState) ? 'Chưa đúng rồi! Câu này sẽ lặp lại sau.' : 'Chưa đúng rồi, sẽ bị rớt Level và học lại ngay!')}
+                    ? (gameState === 'PLAYING_SRS' ? 'Chính xác! Lên cấp!' : 'Chính xác!') 
+                    : (['PLAYING_FREE', 'PLAYING_TEST', 'PLAYING_SUPER_MEMORY'].includes(gameState) ? 'Chưa đúng rồi! Câu này sẽ lặp lại sau.' : 'Chưa đúng rồi, sẽ phải làm lại vào cuối phiên!')}
                 </h4>
                 {!feedback.isCorrect && (
                   <div className="font-medium opacity-95 bg-black/10 p-2 rounded mt-2">
