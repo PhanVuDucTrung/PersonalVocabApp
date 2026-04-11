@@ -458,11 +458,11 @@ const GAME_MODES = ['ENG_VN', 'VN_ENG', 'GAP_FILL', 'MISSING_CHARS'];
 
 // Cấu hình thời gian lặp lại của Spaced Repetition (SRS) 
 const SRS_INTERVALS = {
-  1: 24 * 60 * 60 * 1000,     // Level 1 -> Level 2: Chờ 24 giờ
-  2: 48 * 60 * 60 * 1000,     // Level 2 -> Level 3: Chờ 48 giờ
-  3: 7 * 24 * 60 * 60 * 1000, // Level 3 -> Level 4: Chờ 1 tuần (168h)
-  4: 14 * 24 * 60 * 60 * 1000,// Level 4 -> Level 5: Chờ 2 tuần (336h)
-  5: 28 * 24 * 60 * 60 * 1000 // Level 5: Ôn lại sau 4 tuần 
+  1: 1 * 60 * 60 * 1000,     // Level 1 -> Level 2: Chờ 1 giờ
+  2: 12 * 60 * 60 * 1000,     // Level 2 -> Level 3: Chờ 12 giờ
+  3: 1 * 24 * 60 * 60 * 1000, // Level 3 -> Level 4: Chờ 1 ngày
+  4: 3 * 24 * 60 * 60 * 1000,// Level 4 -> Level 5: Chờ 3 ngày
+  5: 7 * 24 * 60 * 60 * 1000 // Level 5: Ôn lại sau 1 tuần
 };
 
 const App = () => {
