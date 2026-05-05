@@ -283,6 +283,590 @@ const RAW_VOCAB = [
   { test: "Cam 16 Test 4", vocab: "Devote", meaning: "Cống hiến", type: "v", explanation: "Dành thời gian hoặc công sức cho điều gì đó.", example: "Researchers ______ years to developing new algorithms." },
   { test: "Cam 16 Test 4", vocab: "Portrayal", meaning: "Sự miêu tả", type: "n", explanation: "Cách một người hoặc ý tưởng được thể hiện.", example: "Movies often exaggerate the ______ of AI." },
 
+  // Cam 17 Test 2
+  { test: "Cam 17 Test 2", vocab: "Shattering", meaning: "Vỡ nát", type: "adj", explanation: "Bị vỡ thành nhiều mảnh nhỏ hoặc gây sốc mạnh.", example: "The glass made a ______ sound when it broke." },
+  { test: "Cam 17 Test 2", vocab: "Toss", meaning: "Quăng", type: "v", explanation: "Ném nhẹ hoặc nhanh một vật.", example: "He ______ the stone into the river." },
+  { test: "Cam 17 Test 2", vocab: "Stumble upon", meaning: "Tình cờ gặp", type: "v", explanation: "Phát hiện điều gì đó một cách bất ngờ.", example: "Researchers ______ an ancient manuscript." },
+  { test: "Cam 17 Test 2", vocab: "Hebrew", meaning: "Tiếng Do Thái", type: "n", explanation: "Ngôn ngữ cổ và hiện đại của người Do Thái.", example: "The text was written in ______." },
+  { test: "Cam 17 Test 2", vocab: "Fragments", meaning: "Mảnh vỡ", type: "n", explanation: "Những phần nhỏ bị tách ra từ vật lớn.", example: "Archaeologists found ______ of pottery." },
+  { test: "Cam 17 Test 2", vocab: "Antiquities", meaning: "Cổ vật", type: "n", explanation: "Các vật có giá trị lịch sử cổ xưa.", example: "The museum displays rare ______." },
+  { test: "Cam 17 Test 2", vocab: "Bible", meaning: "Kinh thánh", type: "n", explanation: "Cuốn sách tôn giáo quan trọng của Kitô giáo.", example: "The passage comes from the ______." },
+  { test: "Cam 17 Test 2", vocab: "Acquire", meaning: "Mua / có được", type: "v", explanation: "Nhận được hoặc mua một thứ gì đó.", example: "The collector ______ rare documents." },
+  { test: "Cam 17 Test 2", vocab: "Decipher", meaning: "Giải mã", type: "v", explanation: "Hiểu hoặc giải mã văn bản khó đọc.", example: "Scholars tried to ______ the ancient script." },
+  { test: "Cam 17 Test 2", vocab: "Settlement", meaning: "Khu định cư", type: "n", explanation: "Nơi con người sinh sống.", example: "The ruins revealed an early ______." },
+  { test: "Cam 17 Test 2", vocab: "Chisel", meaning: "Đục, chạm khắc", type: "v", explanation: "Cắt hoặc khắc vật liệu cứng.", example: "Workers ______ inscriptions into stone." },
+  { test: "Cam 17 Test 2", vocab: "Withstand", meaning: "Chịu được", type: "v", explanation: "Chịu đựng áp lực hoặc điều kiện khắc nghiệt.", example: "The structure can ______ strong winds." },
+  { test: "Cam 17 Test 2", vocab: "Miscellaneous", meaning: "Khác nhau / linh tinh", type: "adj", explanation: "Bao gồm nhiều loại khác nhau.", example: "The box contained ______ items." },
+  { test: "Cam 17 Test 2", vocab: "Reassemble", meaning: "Lắp ráp lại", type: "v", explanation: "Ghép các phần lại thành một tổng thể.", example: "Experts tried to ______ the broken artifact." },
+  { test: "Cam 17 Test 2", vocab: "Resist", meaning: "Kháng cự", type: "v", explanation: "Chống lại tác động hoặc lực.", example: "Some bacteria ______ antibiotics." },
+  { test: "Cam 17 Test 2", vocab: "Infection", meaning: "Sự nhiễm trùng", type: "n", explanation: "Tình trạng vi khuẩn hoặc virus xâm nhập cơ thể.", example: "The wound developed an ______." },
+  { test: "Cam 17 Test 2", vocab: "Strain", meaning: "Chủng", type: "n", explanation: "Một biến thể của vi khuẩn hoặc virus.", example: "A new ______ of virus was identified." },
+  { test: "Cam 17 Test 2", vocab: "Devastate", meaning: "Tàn phá", type: "v", explanation: "Phá hủy nghiêm trọng.", example: "The disease ______ entire populations." },
+  { test: "Cam 17 Test 2", vocab: "Domesticate", meaning: "Thuần hóa", type: "v", explanation: "Biến động vật hoang dã thành vật nuôi.", example: "Humans began to ______ animals thousands of years ago." },
+  { test: "Cam 17 Test 2", vocab: "Obscure", meaning: "Ít người biết", type: "adj", explanation: "Không nổi tiếng hoặc khó hiểu.", example: "The theory remains ______." },
+  { test: "Cam 17 Test 2", vocab: "Mainstream", meaning: "Xu hướng chính", type: "n", explanation: "Xu hướng phổ biến trong xã hội.", example: "The idea became part of the ______." },
+  { test: "Cam 17 Test 2", vocab: "Tasty", meaning: "Ngon", type: "adj", explanation: "Có vị ngon.", example: "The dish was simple but ______." },
+  { test: "Cam 17 Test 2", vocab: "Aromatic", meaning: "Thơm", type: "adj", explanation: "Có mùi dễ chịu.", example: "The herbs gave the food an ______ smell." },
+  { test: "Cam 17 Test 2", vocab: "Tolerant", meaning: "Chịu được", type: "adj", explanation: "Có khả năng chịu đựng điều kiện.", example: "This plant is ______ to heat." },
+  { test: "Cam 17 Test 2", vocab: "Thrive", meaning: "Phát triển mạnh", type: "v", explanation: "Phát triển khỏe mạnh.", example: "Plants ______ in warm climates." },
+  { test: "Cam 17 Test 2", vocab: "Staple", meaning: "Thực phẩm chính", type: "n", explanation: "Loại thực phẩm cơ bản.", example: "Rice is a ______ food in many countries." },
+  { test: "Cam 17 Test 2", vocab: "Advisable", meaning: "Nên làm", type: "adj", explanation: "Được khuyến nghị.", example: "It is ______ to check the data carefully." },
+  { test: "Cam 17 Test 2", vocab: "Desire", meaning: "Mong muốn", type: "n", explanation: "Ước muốn mạnh mẽ.", example: "He had a strong ______ to succeed." },
+  { test: "Cam 17 Test 2", vocab: "Conventional", meaning: "Thông thường", type: "adj", explanation: "Theo cách truyền thống.", example: "This is a ______ method." },
+  { test: "Cam 17 Test 2", vocab: "Criticise", meaning: "Chỉ trích", type: "v", explanation: "Nêu ra lỗi hoặc khuyết điểm.", example: "The report was widely ______." },
+  { test: "Cam 17 Test 2", vocab: "Misrepresent", meaning: "Xuyên tạc", type: "v", explanation: "Trình bày sai sự thật.", example: "The media may ______ facts." },
+  { test: "Cam 17 Test 2", vocab: "Undermine", meaning: "Làm suy yếu", type: "v", explanation: "Làm giảm hiệu quả hoặc sức mạnh.", example: "False claims can ______ trust." },
+  { test: "Cam 17 Test 2", vocab: "Lay the foundation", meaning: "Đặt nền móng", type: "v", explanation: "Tạo cơ sở ban đầu cho điều gì.", example: "This research ______ for future studies." },
+  { test: "Cam 17 Test 2", vocab: "Jump off", meaning: "Bắt đầu", type: "v", explanation: "Khởi đầu một hoạt động.", example: "The project will ______ next week." },
+  { test: "Cam 17 Test 2", vocab: "Breakthrough", meaning: "Đột phá", type: "n", explanation: "Phát hiện quan trọng.", example: "Scientists made a major ______." },
+  { test: "Cam 17 Test 2", vocab: "Noteworthy", meaning: "Đáng chú ý", type: "adj", explanation: "Đáng được quan tâm.", example: "The results are ______." },
+  { test: "Cam 17 Test 2", vocab: "Coincide", meaning: "Trùng hợp", type: "v", explanation: "Xảy ra cùng lúc.", example: "The findings ______ with earlier studies." },
+  { test: "Cam 17 Test 2", vocab: "Vague", meaning: "Mơ hồ", type: "adj", explanation: "Không rõ ràng.", example: "His explanation was too ______." },
+  { test: "Cam 17 Test 2", vocab: "Merely", meaning: "Chỉ đơn thuần", type: "adv", explanation: "Chỉ là, không hơn.", example: "It was ______ a suggestion." },
+  { test: "Cam 17 Test 2", vocab: "Groundbreaking", meaning: "Đột phá", type: "adj", explanation: "Mang tính cách mạng.", example: "The study is ______." },
+  { test: "Cam 17 Test 2", vocab: "Provenance", meaning: "Nguồn gốc", type: "n", explanation: "Xuất xứ của vật.", example: "The artifact's ______ was unclear." },
+  { test: "Cam 17 Test 2", vocab: "Spontaneously", meaning: "Tự nhiên", type: "adv", explanation: "Không có kế hoạch trước.", example: "The reaction occurred ______." },
+  { test: "Cam 17 Test 2", vocab: "Postulate", meaning: "Giả thuyết", type: "v", explanation: "Đưa ra giả định.", example: "Scientists ______ a new theory." },
+  { test: "Cam 17 Test 2", vocab: "Serendipity", meaning: "Sự tình cờ may mắn", type: "n", explanation: "Phát hiện bất ngờ nhưng có giá trị.", example: "The discovery was pure ______." },
+  
+  // Cam 17 Test 3
+  { test: "Cam 17 Test 3", vocab: "Resemblance", meaning: "Sự giống nhau", type: "n", explanation: "Sự tương đồng về hình dạng, đặc điểm hoặc bản chất giữa hai sự vật.", example: "Scientists noticed a strong ______ between the two species." },
+
+  { test: "Cam 17 Test 3", vocab: "Exclusively", meaning: "Duy nhất / chỉ riêng", type: "adv", explanation: "Chỉ bao gồm hoặc chỉ dành cho một đối tượng.", example: "This animal lives ______ in Tasmania." },
+
+  { test: "Cam 17 Test 3", vocab: "Carnivorous", meaning: "Ăn thịt", type: "adj", explanation: "Động vật ăn thịt các loài khác để sinh tồn.", example: "The tiger is a ______ mammal." },
+
+  { test: "Cam 17 Test 3", vocab: "Emerge", meaning: "Hiện ra / xuất hiện", type: "v", explanation: "Xuất hiện sau khi bị che khuất hoặc chưa được biết đến.", example: "New evidence began to ______ from the excavation." },
+
+  { test: "Cam 17 Test 3", vocab: "Pouch", meaning: "Cái túi", type: "n", explanation: "Túi tự nhiên trên cơ thể một số loài động vật, đặc biệt là thú có túi.", example: "The baby kangaroo stayed safely inside its mother's ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Lair", meaning: "Hang ổ", type: "n", explanation: "Nơi trú ẩn của động vật hoang dã.", example: "The predator returned to its ______ before sunrise." },
+
+  { test: "Cam 17 Test 3", vocab: "Mainland", meaning: "Đất liền", type: "n", explanation: "Phần đất chính của một quốc gia, không phải đảo.", example: "The species disappeared from the ______ centuries ago." },
+
+  { test: "Cam 17 Test 3", vocab: "Well-dated", meaning: "Có niên đại rõ", type: "adj", explanation: "Được xác định niên đại rõ ràng.", example: "Archaeologists found several ______ fossils." },
+
+  { test: "Cam 17 Test 3", vocab: "Carbon-dated", meaning: "Được xác định niên đại bằng carbon", type: "adj", explanation: "Được xác định tuổi bằng phương pháp carbon phóng xạ.", example: "The bones were carefully ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Settlers", meaning: "Người định cư", type: "n", explanation: "Người chuyển đến sinh sống lâu dài ở vùng đất mới.", example: "Early ______ introduced farming techniques." },
+
+  { test: "Cam 17 Test 3", vocab: "Distemper", meaning: "Bệnh sài sốt", type: "n", explanation: "Bệnh truyền nhiễm nghiêm trọng ở động vật.", example: "The disease resembled canine ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Attribute A to B", meaning: "Cho rằng A xảy ra vì B", type: "v", explanation: "Quy nguyên nhân của một sự việc cho yếu tố khác.", example: "Researchers ______ the extinction ______ disease." },
+
+  { test: "Cam 17 Test 3", vocab: "Captivity", meaning: "Nuôi nhốt", type: "n", explanation: "Tình trạng bị giữ trong môi trường kiểm soát.", example: "Some rare animals breed successfully in ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Foresee", meaning: "Thấy trước", type: "v", explanation: "Dự đoán điều có thể xảy ra trong tương lai.", example: "Nobody could ______ the environmental crisis." },
+
+  { test: "Cam 17 Test 3", vocab: "Demise", meaning: "Sự sụp đổ / diệt vong", type: "n", explanation: "Sự kết thúc hoàn toàn của hệ thống, loài hoặc tổ chức.", example: "The species faced rapid ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Diminish", meaning: "Giảm bớt", type: "v", explanation: "Trở nên ít hơn về số lượng hoặc mức độ.", example: "Natural resources continue to ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Extermination", meaning: "Sự tiêu diệt", type: "n", explanation: "Hành động loại bỏ hoàn toàn.", example: "Human hunting caused the ______ of many species." },
+
+  { test: "Cam 17 Test 3", vocab: "Scarcity", meaning: "Sự khan hiếm", type: "n", explanation: "Tình trạng thiếu hụt nguồn lực.", example: "Water ______ affected agriculture." },
+
+  { test: "Cam 17 Test 3", vocab: "Rehome", meaning: "Tái định cư", type: "v", explanation: "Chuyển người hoặc động vật đến nơi sống mới.", example: "Volunteers worked to ______ rescued animals." },
+
+  { test: "Cam 17 Test 3", vocab: "Impractical", meaning: "Không thực tế", type: "adj", explanation: "Khó áp dụng trong thực tế.", example: "The proposal sounded innovative but ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Declare", meaning: "Tuyên bố", type: "v", explanation: "Công khai thông báo điều gì đó.", example: "The government officially ______ the area protected." },
+
+  { test: "Cam 17 Test 3", vocab: "Cultivation", meaning: "Sự canh tác", type: "n", explanation: "Quá trình trồng trọt đất đai.", example: "Rice ______ transformed the region." },
+
+  { test: "Cam 17 Test 3", vocab: "Plantation", meaning: "Đồn điền", type: "n", explanation: "Khu đất lớn dùng để trồng cây thương mại.", example: "The rubber ______ covered thousands of hectares." },
+
+  { test: "Cam 17 Test 3", vocab: "Hectare", meaning: "Héc-ta", type: "n", explanation: "Đơn vị đo diện tích đất bằng 10.000 mét vuông.", example: "Farmers cultivated over 500 ______ of land." },
+
+  { test: "Cam 17 Test 3", vocab: "Rapeseed", meaning: "Hạt cải dầu", type: "n", explanation: "Loại cây trồng dùng để sản xuất dầu ăn.", example: "Fields of ______ bloom brightly in spring." },
+
+  { test: "Cam 17 Test 3", vocab: "Immensely", meaning: "Vô cùng", type: "adv", explanation: "Ở mức độ rất lớn.", example: "The discovery was ______ valuable." },
+
+  { test: "Cam 17 Test 3", vocab: "Patch", meaning: "Mảnh đất / vùng", type: "n", explanation: "Một khu vực nhỏ có đặc điểm riêng.", example: "A small ______ of forest survived." },
+
+  { test: "Cam 17 Test 3", vocab: "Virgin", meaning: "Nguyên sinh", type: "adj", explanation: "Chưa bị con người khai phá.", example: "They explored ______ rainforest." },
+
+  { test: "Cam 17 Test 3", vocab: "Derive from", meaning: "Bắt nguồn từ", type: "v", explanation: "Có nguồn gốc từ điều gì đó.", example: "Many medicines ______ plants." },
+
+  { test: "Cam 17 Test 3", vocab: "Property", meaning: "Đặc tính", type: "n", explanation: "Đặc điểm vốn có của vật chất hoặc sự vật.", example: "Water has unique chemical ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Sterile", meaning: "Vô trùng", type: "adj", explanation: "Không có vi khuẩn hoặc vi sinh vật.", example: "Medical tools must remain ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Monoculture", meaning: "Độc canh", type: "n", explanation: "Chỉ trồng một loại cây trên diện rộng.", example: "Large-scale ______ may reduce biodiversity." },
+
+  { test: "Cam 17 Test 3", vocab: "Epiphytic", meaning: "Biểu sinh", type: "adj", explanation: "Thực vật sống bám trên cây khác.", example: "Orchids are often ______ plants." },
+
+  { test: "Cam 17 Test 3", vocab: "Keystone", meaning: "Nhân tố chủ chốt", type: "n", explanation: "Yếu tố cực kỳ quan trọng trong hệ thống.", example: "Bees are a ______ species in many ecosystems." },
+
+  { test: "Cam 17 Test 3", vocab: "Fungi", meaning: "Nấm", type: "n", explanation: "Nhóm sinh vật như nấm men, nấm mốc.", example: "Forest soil contains millions of ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Invertebrates", meaning: "Động vật không xương sống", type: "n", explanation: "Động vật không có cột sống.", example: "Insects are common ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Amphibian", meaning: "Động vật lưỡng cư", type: "n", explanation: "Động vật sống được cả dưới nước và trên cạn.", example: "Frogs are typical ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Reptile", meaning: "Bò sát", type: "n", explanation: "Động vật máu lạnh như rắn, thằn lằn.", example: "The crocodile is a large ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Mammal", meaning: "Động vật có vú", type: "n", explanation: "Động vật nuôi con bằng sữa mẹ.", example: "Whales are marine ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Seize", meaning: "Nắm bắt", type: "v", explanation: "Nhanh chóng tận dụng cơ hội.", example: "Businesses must ______ market opportunities." },
+
+  { test: "Cam 17 Test 3", vocab: "Maximise", meaning: "Tối đa hóa", type: "v", explanation: "Làm tăng đến mức cao nhất.", example: "Farmers try to ______ crop yields." },
+
+  { test: "Cam 17 Test 3", vocab: "Cropland", meaning: "Đất canh tác", type: "n", explanation: "Đất được sử dụng cho nông nghiệp.", example: "The region has fertile ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Justification", meaning: "Sự biện minh", type: "n", explanation: "Lý do hợp lý để giải thích hành động.", example: "There was little ______ for the decision." },
+
+  { test: "Cam 17 Test 3", vocab: "Boycott", meaning: "Sự tẩy chay", type: "n", explanation: "Việc từ chối ủng hộ để phản đối.", example: "Consumers launched a ______ campaign." },
+
+  { test: "Cam 17 Test 3", vocab: "Lift", meaning: "Bãi bỏ", type: "v", explanation: "Xóa bỏ lệnh cấm hoặc hạn chế.", example: "The government decided to ______ the restrictions." },
+
+  { test: "Cam 17 Test 3", vocab: "Utilitarian", meaning: "Thực dụng", type: "adj", explanation: "Tập trung vào lợi ích thực tế.", example: "The design is simple and ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Bone of contention", meaning: "Chủ đề gây tranh cãi", type: "n", explanation: "Vấn đề khiến nhiều bên bất đồng.", example: "Land ownership became a ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Dwindle", meaning: "Suy giảm", type: "v", explanation: "Giảm dần theo thời gian.", example: "Fish populations continue to ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Refrigerated", meaning: "Được làm lạnh", type: "adj", explanation: "Được bảo quản ở nhiệt độ thấp.", example: "Food must be kept ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Incorporate", meaning: "Kết hợp", type: "v", explanation: "Đưa một phần vào tổng thể.", example: "The architect ______ natural materials into the design." },
+
+  { test: "Cam 17 Test 3", vocab: "Geology", meaning: "Địa chất học", type: "n", explanation: "Ngành nghiên cứu cấu trúc Trái Đất.", example: "She studied ______ at university." },
+
+  { test: "Cam 17 Test 3", vocab: "Cluster", meaning: "Tụ lại thành cụm", type: "v", explanation: "Tập trung thành nhóm nhỏ.", example: "Buildings ______ around the city center." },
+
+  { test: "Cam 17 Test 3", vocab: "Address", meaning: "Giải quyết / đề cập", type: "v", explanation: "Xử lý hoặc nói đến một vấn đề.", example: "The meeting aimed to ______ housing shortages." },
+
+  { test: "Cam 17 Test 3", vocab: "Compilation", meaning: "Sự biên soạn", type: "n", explanation: "Tập hợp thông tin từ nhiều nguồn.", example: "The book is a ______ of historical records." },
+
+  { test: "Cam 17 Test 3", vocab: "Set the stage for", meaning: "Tạo tiền đề cho", type: "v", explanation: "Chuẩn bị điều kiện cho điều gì xảy ra.", example: "The reforms ______ economic growth." },
+
+  { test: "Cam 17 Test 3", vocab: "Tenement", meaning: "Khu nhà ổ chuột", type: "n", explanation: "Nhà tập thể cũ, chật chội.", example: "Many workers lived in crowded ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Skyscraper", meaning: "Tòa nhà chọc trời", type: "n", explanation: "Tòa nhà rất cao trong đô thị.", example: "Modern ______ dominate the skyline." },
+
+  { test: "Cam 17 Test 3", vocab: "Slum", meaning: "Khu ổ chuột", type: "n", explanation: "Khu dân cư nghèo, điều kiện sống kém.", example: "The government planned to clear the ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Clearance", meaning: "Sự giải tỏa", type: "n", explanation: "Việc dọn dẹp hoặc phá bỏ khu vực.", example: "Urban ______ displaced thousands of residents." },
+
+  { test: "Cam 17 Test 3", vocab: "Fraction", meaning: "Một phần nhỏ", type: "n", explanation: "Một phần rất nhỏ của tổng thể.", example: "Only a ______ of the city remains unchanged." },
+
+  { test: "Cam 17 Test 3", vocab: "Glance", meaning: "Cái nhìn lướt", type: "n", explanation: "Cái nhìn nhanh trong thời gian ngắn.", example: "At first ______, the building looked ordinary." },
+
+  { test: "Cam 17 Test 3", vocab: "Specialised", meaning: "Chuyên biệt", type: "adj", explanation: "Được thiết kế cho mục đích cụ thể.", example: "The lab uses ______ equipment." },
+
+  { test: "Cam 17 Test 3", vocab: "Draw on", meaning: "Dựa vào", type: "v", explanation: "Sử dụng kiến thức hoặc nguồn lực sẵn có.", example: "The documentary ______ historical archives." },
+
+  { test: "Cam 17 Test 3", vocab: "Footage", meaning: "Đoạn phim", type: "n", explanation: "Video được ghi hình.", example: "Researchers reviewed old ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Lengthy", meaning: "Dài dòng", type: "adj", explanation: "Kéo dài hơn bình thường.", example: "The report was too ______ to finish in one day." },
+
+  { test: "Cam 17 Test 3", vocab: "Exuberance", meaning: "Sự nhiệt huyết", type: "n", explanation: "Nguồn năng lượng tích cực, mạnh mẽ.", example: "Children showed great ______ during the event." },
+
+  { test: "Cam 17 Test 3", vocab: "Viability", meaning: "Khả năng tồn tại", type: "n", explanation: "Khả năng thành công hoặc duy trì lâu dài.", example: "Experts questioned the ______ of the project." },
+
+  { test: "Cam 17 Test 3", vocab: "Epilogue", meaning: "Phần kết", type: "n", explanation: "Phần cuối bổ sung cho tác phẩm hoặc câu chuyện.", example: "The novel ends with an emotional ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Subterranean", meaning: "Dưới lòng đất", type: "adj", explanation: "Nằm dưới bề mặt đất.", example: "The city has a vast ______ transport system." },
+
+  { test: "Cam 17 Test 3", vocab: "Subsoil", meaning: "Lớp đất nền", type: "n", explanation: "Lớp đất nằm dưới lớp đất mặt.", example: "Engineers examined the ______ carefully." },
+
+  { test: "Cam 17 Test 3", vocab: "Amenity", meaning: "Tiện ích", type: "n", explanation: "Cơ sở vật chất mang lại sự thuận tiện.", example: "Parks are valuable urban ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Enclave", meaning: "Khu dân cư biệt lập", type: "n", explanation: "Khu vực tách biệt với xung quanh.", example: "The wealthy lived in a private ______." },
+
+  { test: "Cam 17 Test 3", vocab: "Waterfront", meaning: "Khu ven sông / biển", type: "n", explanation: "Khu vực tiếp giáp mặt nước.", example: "The old warehouses were converted into ______ apartments." },
+
+  { test: "Cam 17 Test 3", vocab: "Caisson", meaning: "Trụ móng", type: "n", explanation: "Kết cấu lớn dùng làm móng dưới nước hoặc dưới đất.", example: "Workers installed a massive ______ under the bridge." },
+  
+  // Cam 17 Test 4
+  { test: "Cam 17 Test 4", vocab: "Staple", meaning: "Chủ yếu, thiết yếu", type: "adj", explanation: "Được sử dụng hoặc tiêu thụ thường xuyên, đóng vai trò nền tảng trong đời sống hằng ngày hoặc trong một hệ thống.", example: "Rice is a staple food in many Asian countries." },
+
+  { test: "Cam 17 Test 4", vocab: "Vast", meaning: "Rộng lớn", type: "adj", explanation: "Có quy mô, diện tích hoặc số lượng rất lớn, khó đo đếm hết.", example: "Vast areas of forest were destroyed." },
+
+  { test: "Cam 17 Test 4", vocab: "Subsistence", meaning: "Tự cung tự cấp", type: "n", explanation: "Cách sống hoặc sản xuất chỉ đủ đáp ứng các nhu cầu cơ bản để tồn tại.", example: "Many families still depend on subsistence farming." },
+
+  { test: "Cam 17 Test 4", vocab: "Paddy", meaning: "Ruộng lúa", type: "n", explanation: "Cánh đồng ngập nước chuyên dùng để trồng lúa.", example: "The paddy fields looked beautiful at sunset." },
+
+  { test: "Cam 17 Test 4", vocab: "Insectivorous", meaning: "Ăn côn trùng", type: "adj", explanation: "Mô tả động vật lấy côn trùng làm nguồn thức ăn chính.", example: "Bats are highly insectivorous animals." },
+
+  { test: "Cam 17 Test 4", vocab: "Devastating", meaning: "Tàn phá", type: "adj", explanation: "Gây ra thiệt hại nghiêm trọng về vật chất, tinh thần hoặc môi trường.", example: "The disease had a devastating impact on crops." },
+
+  { test: "Cam 17 Test 4", vocab: "Thrive", meaning: "Phát triển mạnh", type: "v", explanation: "Sinh trưởng, phát triển hoặc thành công trong điều kiện thuận lợi.", example: "Bats thrive in warm climates." },
+
+  { test: "Cam 17 Test 4", vocab: "Feast", meaning: "Ăn no nê", type: "v", explanation: "Ăn một lượng lớn thức ăn với sự thích thú hoặc sung túc.", example: "The bats feast on insects every night." },
+
+  { test: "Cam 17 Test 4", vocab: "Indigenous", meaning: "Bản địa", type: "adj", explanation: "Có nguồn gốc tự nhiên và tồn tại lâu đời ở một khu vực cụ thể.", example: "These plants are indigenous to Vietnam." },
+
+  { test: "Cam 17 Test 4", vocab: "Take advantage of", meaning: "Tận dụng", type: "v", explanation: "Sử dụng hiệu quả cơ hội, nguồn lực hoặc điều kiện thuận lợi để đạt mục tiêu.", example: "Farmers take advantage of natural resources." },
+
+  { test: "Cam 17 Test 4", vocab: "Swarm", meaning: "Đàn côn trùng", type: "n", explanation: "Một nhóm lớn côn trùng hoặc động vật nhỏ di chuyển cùng nhau.", example: "A swarm of locusts destroyed the fields." },
+
+  { test: "Cam 17 Test 4", vocab: "Scarce", meaning: "Khan hiếm", type: "adj", explanation: "Có số lượng ít và không dễ tìm hoặc tiếp cận.", example: "Food became scarce during the drought." },
+
+  { test: "Cam 17 Test 4", vocab: "Roost", meaning: "Trú ngụ", type: "v", explanation: "Nghỉ ngơi hoặc ngủ ở một nơi cố định, thường dùng với chim hoặc dơi.", example: "Bats roost in caves during the day." },
+
+  { test: "Cam 17 Test 4", vocab: "Sacred", meaning: "Thiêng liêng", type: "adj", explanation: "Được tôn kính hoặc gắn với tín ngưỡng, tôn giáo hay giá trị tinh thần sâu sắc.", example: "The mountain is considered sacred." },
+
+  { test: "Cam 17 Test 4", vocab: "Compile", meaning: "Biên soạn, tổng hợp", type: "v", explanation: "Thu thập và sắp xếp thông tin từ nhiều nguồn thành một tài liệu hoàn chỉnh.", example: "We are trying to compile a list of suitable people for the job." },
+
+  { test: "Cam 17 Test 4", vocab: "Ledger", meaning: "Sổ cái", type: "n", explanation: "Sổ ghi chép các giao dịch tài chính hoặc dữ liệu kế toán một cách hệ thống.", example: "All donations were recorded in a ledger by the committee." },
+
+  { test: "Cam 17 Test 4", vocab: "Obey", meaning: "Tuân theo", type: "v", explanation: "Làm theo mệnh lệnh, quy tắc hoặc yêu cầu từ người có thẩm quyền.", example: "He was arrested when he failed to obey a police instruction." },
+
+  { test: "Cam 17 Test 4", vocab: "Reprimand", meaning: "Khiển trách", type: "v", explanation: "Phê bình nghiêm khắc vì hành vi không phù hợp.", example: "The judge reprimanded him for using such language in court." },
+
+  { test: "Cam 17 Test 4", vocab: "Weave", meaning: "Dệt", type: "v", explanation: "Đan hoặc kết hợp các sợi, vật liệu để tạo thành cấu trúc hoàn chỉnh.", example: "Most spiders weave webs that are almost invisible." },
+
+  { test: "Cam 17 Test 4", vocab: "Ordinance", meaning: "Quy định, sắc lệnh", type: "n", explanation: "Quy tắc hoặc luật lệ được ban hành bởi chính quyền hoặc cơ quan có thẩm quyền.", example: "A city ordinance says parks must be closed at 11 p.m." },
+
+  { test: "Cam 17 Test 4", vocab: "Far from", meaning: "Gần như không", type: "phrase", explanation: "Dùng để nhấn mạnh điều gì đó hoàn toàn trái ngược với suy nghĩ thông thường.", example: "Computers, far from destroying jobs, can create employment." },
+
+  { test: "Cam 17 Test 4", vocab: "Straightforward", meaning: "Đơn giản, dễ hiểu", type: "adj", explanation: "Rõ ràng, trực tiếp và không phức tạp khi thực hiện hoặc hiểu.", example: "It's quite straightforward to get here." },
+
+  { test: "Cam 17 Test 4", vocab: "Bodice", meaning: "Áo thân trên của phụ nữ", type: "n", explanation: "Phần áo ôm thân trên trong váy hoặc trang phục nữ truyền thống.", example: "She was wearing a ballgown with a fitted bodice." },
+
+  { test: "Cam 17 Test 4", vocab: "Shed", meaning: "Tỏa ra, chiếu ra", type: "v", explanation: "Phát ra ánh sáng, nhiệt hoặc một thứ gì đó lan tỏa ra ngoài.", example: "The candles shed a soft glow on her face." },
+
+  { test: "Cam 17 Test 4", vocab: "Unfold", meaning: "Dần lộ ra", type: "v", explanation: "Diễn biến hoặc xuất hiện từng bước theo thời gian.", example: "Dramatic events were about to unfold." },
+
+  { test: "Cam 17 Test 4", vocab: "Sermon", meaning: "Bài thuyết giáo", type: "n", explanation: "Bài nói mang tính tôn giáo hoặc đạo đức nhằm truyền đạt thông điệp.", example: "She preached a sermon on forgiveness." },
+
+  { test: "Cam 17 Test 4", vocab: "Chastise", meaning: "Quở trách", type: "v", explanation: "Phê bình hoặc trách phạt ai đó vì lỗi lầm.", example: "He chastised the team for their lack of commitment." },
+
+  { test: "Cam 17 Test 4", vocab: "Punishment", meaning: "Hình phạt", type: "n", explanation: "Biện pháp xử lý được áp dụng khi ai đó vi phạm quy định.", example: "The punishment should fit the crime." },
+
+  { test: "Cam 17 Test 4", vocab: "Spinster", meaning: "Phụ nữ chưa chồng", type: "n", explanation: "Cách gọi truyền thống chỉ phụ nữ lớn tuổi chưa kết hôn.", example: "The sisters remained spinsters all their lives." },
+
+  { test: "Cam 17 Test 4", vocab: "Mediocre", meaning: "Tầm thường", type: "adj", explanation: "Chỉ ở mức trung bình hoặc dưới mức kỳ vọng, không nổi bật.", example: "I thought the book was pretty mediocre." },
+
+  { test: "Cam 17 Test 4", vocab: "Undermine", meaning: "Làm suy yếu", type: "v", explanation: "Làm giảm sức mạnh, sự tin tưởng hoặc hiệu quả của điều gì đó.", example: "This crisis has undermined his position." },
+
+  { test: "Cam 17 Test 4", vocab: "The uninitiated", meaning: "Người ngoại đạo", type: "n", explanation: "Những người chưa có kiến thức hoặc kinh nghiệm trong một lĩnh vực cụ thể.", example: "To the uninitiated, the system seems too complicated." },
+
+  { test: "Cam 17 Test 4", vocab: "Call for", meaning: "Đòi hỏi", type: "v", explanation: "Yêu cầu hoặc khiến cần phải có một hành động cụ thể.", example: "The situation calls for prompt action." },
+
+  { test: "Cam 17 Test 4", vocab: "Go back", meaning: "Có từ, tồn tại từ", type: "v", explanation: "Có nguồn gốc hoặc tồn tại từ một thời điểm trong quá khứ.", example: "Their family goes back to the time of the Pilgrim Fathers." },
+
+  { test: "Cam 17 Test 4", vocab: "Simultaneous", meaning: "Đồng thời", type: "adj", explanation: "Xảy ra cùng một lúc hoặc trong cùng thời điểm.", example: "There were several simultaneous attacks by the rebels." },
+
+  { test: "Cam 17 Test 4", vocab: "Accomplished", meaning: "Tài năng, thành thạo", type: "adj", explanation: "Có kỹ năng cao nhờ học tập, luyện tập hoặc kinh nghiệm.", example: "She was an elegant and accomplished woman." },
+
+  { test: "Cam 17 Test 4", vocab: "Run through", meaning: "Diễn tập", type: "v", explanation: "Thực hành hoặc xem lại toàn bộ một quy trình hay màn trình diễn.", example: "Can we run through Scene 3 again, please?" },
+
+  { test: "Cam 17 Test 4", vocab: "Play out", meaning: "Diễn ra", type: "v", explanation: "Xảy ra hoặc phát triển đến kết quả cuối cùng.", example: "Their love affair was played out against the backdrop of war." },
+
+  { test: "Cam 17 Test 4", vocab: "Exceptional", meaning: "Phi thường", type: "adj", explanation: "Vượt xa mức bình thường về chất lượng, khả năng hoặc thành tích.", example: "At the age of five he showed exceptional talent." },
+
+  { test: "Cam 17 Test 4", vocab: "Gifted", meaning: "Có năng khiếu", type: "adj", explanation: "Có khả năng tự nhiên nổi trội trong một lĩnh vực nào đó.", example: "She was extremely gifted at poetry." },
+
+  { test: "Cam 17 Test 4", vocab: "Dedicate", meaning: "Cống hiến", type: "v", explanation: "Dành thời gian, công sức hoặc tâm huyết cho một mục tiêu.", example: "She dedicates herself to her work." },
+
+  { test: "Cam 17 Test 4", vocab: "Set in", meaning: "Bắt đầu xuất hiện", type: "v", explanation: "Bắt đầu và có xu hướng kéo dài hoặc ảnh hưởng rõ rệt.", example: "The rain seemed to have set in for the day." },
+
+  { test: "Cam 17 Test 4", vocab: "Patchy", meaning: "Chắp vá, không đồng đều", type: "adj", explanation: "Không liên tục, không ổn định hoặc có chất lượng không nhất quán.", example: "It was a patchy performance." },
+
+  { test: "Cam 17 Test 4", vocab: "Fragmented", meaning: "Phân mảnh", type: "adj", explanation: "Bị chia nhỏ, thiếu liên kết hoặc thiếu sự thống nhất.", example: "Efforts were fragmented across multiple teams." },
+
+  { test: "Cam 17 Test 4", vocab: "Forthcoming", meaning: "Sắp tới", type: "adj", explanation: "Sẽ xảy ra, được công bố hoặc xuất hiện trong tương lai gần.", example: "Keep an eye on the noticeboards for forthcoming events." },
+
+  { test: "Cam 17 Test 4", vocab: "Have", meaning: "Sai khiến", type: "v", explanation: "Khiến hoặc yêu cầu người khác thực hiện một hành động nào đó.", example: "He had the bouncers throw them out." },
+
+  { test: "Cam 17 Test 4", vocab: "Recall", meaning: "Ghi nhớ", type: "v", explanation: "Nhớ lại thông tin, sự kiện hoặc ký ức trong quá khứ.", example: "She could not recall his name." },
+
+  { test: "Cam 17 Test 4", vocab: "Tentative", meaning: "Tạm thời, chưa chắc chắn", type: "adj", explanation: "Chưa được xác nhận hoàn toàn và có thể thay đổi.", example: "We made a tentative arrangement." },
+
+  { test: "Cam 17 Test 4", vocab: "Unpublished", meaning: "Chưa xuất bản", type: "adj", explanation: "Chưa được phát hành công khai dưới dạng sách, báo hoặc tài liệu.", example: "Much of his writing remains unpublished." },
+  
+  // Cam 18 Test 3
+  { test: "Cam 18 Test 3", vocab: "Slag", meaning: "Xỉ thải luyện kim", type: "n", explanation: "Phần vật liệu thải ra trong quá trình nung chảy hoặc tinh luyện kim loại.", example: "The slag from the furnace was discarded." },
+
+  { test: "Cam 18 Test 3", vocab: "Byproduct", meaning: "Sản phẩm phụ", type: "n", explanation: "Sản phẩm được tạo ra ngoài sản phẩm chính trong một quá trình sản xuất hoặc phản ứng.", example: "The production process generates a byproduct that can be reused." },
+
+  { test: "Cam 18 Test 3", vocab: "High-rise", meaning: "Tòa nhà cao tầng", type: "adj", explanation: "Mô tả công trình có nhiều tầng, thường xuất hiện ở đô thị hiện đại.", example: "The city skyline is dominated by high-rise buildings." },
+
+  { test: "Cam 18 Test 3", vocab: "Indication", meaning: "Dấu hiệu", type: "n", explanation: "Một tín hiệu hoặc bằng chứng cho thấy điều gì đó đang hoặc sắp xảy ra.", example: "The dark clouds are an indication of an incoming storm." },
+
+  { test: "Cam 18 Test 3", vocab: "Abundance", meaning: "Sự phong phú", type: "n", explanation: "Tình trạng có số lượng rất nhiều hoặc dồi dào.", example: "The garden was filled with an abundance of flowers." },
+
+  { test: "Cam 18 Test 3", vocab: "Viable", meaning: "Khả thi", type: "adj", explanation: "Có khả năng thực hiện thành công trong điều kiện thực tế.", example: "The project seems viable and worth pursuing." },
+
+  { test: "Cam 18 Test 3", vocab: "Moisture", meaning: "Độ ẩm", type: "n", explanation: "Lượng nước hoặc hơi nước tồn tại trong không khí, đất hoặc vật liệu.", example: "The plant needs moisture to grow." },
+
+  { test: "Cam 18 Test 3", vocab: "Absorb", meaning: "Hấp thụ", type: "v", explanation: "Tiếp nhận hoặc hút chất lỏng, năng lượng hoặc thông tin vào bên trong.", example: "The sponge can absorb a lot of water." },
+
+  { test: "Cam 18 Test 3", vocab: "Adhesive", meaning: "Chất kết dính", type: "n", explanation: "Vật liệu dùng để gắn hoặc liên kết hai bề mặt với nhau.", example: "The adhesive helps in sticking things together." },
+
+  { test: "Cam 18 Test 3", vocab: "Crosswise", meaning: "Theo chiều ngang", type: "adj", explanation: "Được sắp xếp hoặc cắt theo chiều ngang thay vì chiều dọc.", example: "She cut the fabric crosswise." },
+
+  { test: "Cam 18 Test 3", vocab: "Property", meaning: "Tính chất", type: "n", explanation: "Đặc điểm vật lý, hóa học hoặc chức năng vốn có của một chất hoặc vật liệu.", example: "This material has excellent insulating properties." },
+
+  { test: "Cam 18 Test 3", vocab: "Novel", meaning: "Mới lạ", type: "adj", explanation: "Mang tính sáng tạo, khác biệt hoặc chưa từng được áp dụng trước đó.", example: "The researchers proposed a novel solution." },
+
+  { test: "Cam 18 Test 3", vocab: "Substance", meaning: "Chất", type: "n", explanation: "Một dạng vật chất có thành phần và đặc tính xác định.", example: "Some materials contain toxic substances." },
+
+  { test: "Cam 18 Test 3", vocab: "Underpinned", meaning: "Được củng cố", type: "adj", explanation: "Được hỗ trợ hoặc làm vững chắc bởi bằng chứng, lý thuyết hoặc nền tảng nào đó.", example: "The theory is underpinned by research." },
+
+  { test: "Cam 18 Test 3", vocab: "Marvellous", meaning: "Tuyệt vời", type: "adj", explanation: "Rất ấn tượng, đáng ngạc nhiên theo hướng tích cực.", example: "The results were marvellous." },
+
+  { test: "Cam 18 Test 3", vocab: "Mouldable", meaning: "Có thể đúc", type: "adj", explanation: "Có thể dễ dàng tạo hình hoặc thay đổi hình dạng khi tác động.", example: "The clay is soft and mouldable." },
+
+  { test: "Cam 18 Test 3", vocab: "Pourable", meaning: "Có thể đổ", type: "adj", explanation: "Có độ lỏng phù hợp để chảy hoặc đổ vào khuôn chứa.", example: "The liquid concrete is pourable." },
+
+  { test: "Cam 18 Test 3", vocab: "Reinforce", meaning: "Gia cố", type: "v", explanation: "Làm cho cấu trúc, ý tưởng hoặc hệ thống trở nên chắc chắn hơn.", example: "Workers reinforced the foundation." },
+
+  { test: "Cam 18 Test 3", vocab: "Medieval", meaning: "Thời Trung cổ", type: "adj", explanation: "Thuộc giai đoạn lịch sử châu Âu từ khoảng thế kỷ 5 đến 15.", example: "The castle dates back to medieval times." },
+
+  { test: "Cam 18 Test 3", vocab: "Proven in practice", meaning: "Được chứng minh thực tế", type: "adj", explanation: "Đã được kiểm chứng hiệu quả qua ứng dụng thực tế thay vì chỉ lý thuyết.", example: "The method has been proven in practice." },
+
+  { test: "Cam 18 Test 3", vocab: "Primitive", meaning: "Thô sơ, nguyên thủy", type: "adj", explanation: "Đơn giản, chưa phát triển hoặc thuộc giai đoạn ban đầu.", example: "Early engines were primitive compared with modern machines." },
+
+  { test: "Cam 18 Test 3", vocab: "Evolve into", meaning: "Phát triển thành", type: "v", explanation: "Dần thay đổi và trở thành một hình thức hoặc trạng thái mới.", example: "Over time, simple machines evolved into complex systems." },
+
+  { test: "Cam 18 Test 3", vocab: "Miniaturized", meaning: "Được thu nhỏ", type: "adj", explanation: "Được thiết kế hoặc chuyển đổi thành phiên bản nhỏ gọn hơn.", example: "The miniaturized device fits into your pocket." },
+
+  { test: "Cam 18 Test 3", vocab: "Reservoir", meaning: "Bể chứa", type: "n", explanation: "Nơi lưu trữ chất lỏng hoặc nguồn cung dự trữ cho hệ thống.", example: "The reservoir stores water for the engine." },
+
+  { test: "Cam 18 Test 3", vocab: "Shortcoming", meaning: "Thiếu sót", type: "n", explanation: "Điểm yếu hoặc hạn chế trong thiết kế, kế hoạch hoặc năng lực.", example: "One shortcoming of the design was its weight." },
+
+  { test: "Cam 18 Test 3", vocab: "Phase out", meaning: "Loại bỏ dần", type: "v", explanation: "Ngừng sử dụng hoặc sản xuất một cách từ từ theo lộ trình.", example: "The company decided to phase out old technology." },
+
+  { test: "Cam 18 Test 3", vocab: "Rekindle", meaning: "Khơi lại", type: "v", explanation: "Làm cho sự quan tâm, cảm xúc hoặc hoạt động trở nên mạnh mẽ trở lại.", example: "The project rekindled interest in steam vehicles." },
+
+  { test: "Cam 18 Test 3", vocab: "Wrecked", meaning: "Bị phá hỏng", type: "adj", explanation: "Bị hư hại nghiêm trọng đến mức khó sử dụng hoặc sửa chữa.", example: "The wrecked car was removed from the road." },
+
+  { test: "Cam 18 Test 3", vocab: "Comprise", meaning: "Bao gồm", type: "v", explanation: "Được tạo thành từ nhiều thành phần hoặc bộ phận khác nhau.", example: "The system comprises several mechanical parts." },
+
+  { test: "Cam 18 Test 3", vocab: "Reconfigure", meaning: "Thiết kế lại", type: "v", explanation: "Thay đổi cách sắp xếp hoặc cấu trúc để tối ưu hiệu quả.", example: "Engineers had to reconfigure the design." },
+
+  { test: "Cam 18 Test 3", vocab: "Prototype", meaning: "Nguyên mẫu", type: "n", explanation: "Phiên bản đầu tiên của một sản phẩm được tạo ra để thử nghiệm.", example: "The company built a prototype for testing." },
+
+  { test: "Cam 18 Test 3", vocab: "Internal combustion engine", meaning: "Động cơ đốt trong", type: "n", explanation: "Loại động cơ tạo năng lượng bằng cách đốt nhiên liệu bên trong buồng đốt.", example: "Most cars today use an internal combustion engine." },
+
+  { test: "Cam 18 Test 3", vocab: "Clattering", meaning: "Phát ra tiếng lạch cạch", type: "adj", explanation: "Tạo ra âm thanh va chạm liên tục của kim loại hoặc vật cứng.", example: "The old engine made a clattering noise." },
+
+  { test: "Cam 18 Test 3", vocab: "Aroma", meaning: "Mùi hương", type: "n", explanation: "Mùi đặc trưng, thường dễ nhận biết và có thể dễ chịu.", example: "The aroma of fuel filled the workshop." },
+
+  { test: "Cam 18 Test 3", vocab: "Swift", meaning: "Nhanh", type: "adj", explanation: "Di chuyển hoặc phản ứng với tốc độ cao.", example: "The new model was surprisingly swift." },
+
+  { test: "Cam 18 Test 3", vocab: "Emit", meaning: "Phát ra", type: "v", explanation: "Thải hoặc giải phóng khí, ánh sáng, âm thanh hoặc năng lượng.", example: "The engine emits less pollution." },
+
+  { test: "Cam 18 Test 3", vocab: "Deposit", meaning: "Tiền đặt cọc", type: "n", explanation: "Khoản tiền trả trước để giữ chỗ hoặc đảm bảo giao dịch.", example: "Customers paid a deposit to reserve the vehicle." },
+
+  { test: "Cam 18 Test 3", vocab: "Key-based ignition", meaning: "Hệ thống khởi động bằng chìa khóa", type: "n", explanation: "Cơ chế khởi động phương tiện bằng cách dùng chìa khóa cơ học.", example: "Most modern vehicles use key-based ignition." },
+
+  { test: "Cam 18 Test 3", vocab: "Sluggish", meaning: "Chậm chạp", type: "adj", explanation: "Thiếu tốc độ, phản ứng chậm hoặc hoạt động kém linh hoạt.", example: "The old vehicle felt sluggish on hills." },
+
+  { test: "Cam 18 Test 3", vocab: "Plague", meaning: "Gây trục trặc", type: "v", explanation: "Liên tục gây ra vấn đề, khó khăn hoặc phiền toái.", example: "Technical issues continued to plague the design." },
+
+  { test: "Cam 18 Test 3", vocab: "Glitches", meaning: "Lỗi nhỏ", type: "n", explanation: "Những lỗi nhỏ hoặc trục trặc tạm thời trong hệ thống.", example: "The software update fixed several glitches." },
+
+  { test: "Cam 18 Test 3", vocab: "Erratic", meaning: "Thất thường", type: "adj", explanation: "Không ổn định, khó dự đoán hoặc thay đổi bất thường.", example: "The engine showed erratic performance." },
+
+  { test: "Cam 18 Test 3", vocab: "Tinker", meaning: "Mày mò sửa chữa", type: "v", explanation: "Thử sửa hoặc điều chỉnh thiết bị bằng cách thực hành trực tiếp.", example: "He likes to tinker with old engines." },
+
+  { test: "Cam 18 Test 3", vocab: "Fold", meaning: "Phá sản", type: "v", explanation: "Ngừng hoạt động kinh doanh do không thể tiếp tục duy trì.", example: "The company was forced to fold." },
+
+  { test: "Cam 18 Test 3", vocab: "Adamant", meaning: "Kiên quyết", type: "adj", explanation: "Giữ lập trường rất chắc chắn và không dễ thay đổi.", example: "He remained adamant about his decision." },
+
+  { test: "Cam 18 Test 3", vocab: "Negligible", meaning: "Không đáng kể", type: "adj", explanation: "Quá nhỏ để tạo ra ảnh hưởng hoặc đáng quan tâm.", example: "The difference in cost was negligible." },
+
+  { test: "Cam 18 Test 3", vocab: "Kerosene", meaning: "Dầu hỏa", type: "n", explanation: "Một loại nhiên liệu lỏng được tinh chế từ dầu mỏ.", example: "The lamp was fueled by kerosene." },
+
+  { test: "Cam 18 Test 3", vocab: "Go out of business", meaning: "Ngừng kinh doanh", type: "v", explanation: "Chấm dứt hoạt động thương mại hoặc đóng cửa công ty.", example: "Many small manufacturers went out of business." },
+
+  { test: "Cam 18 Test 3", vocab: "Tentative", meaning: "Tạm thời", type: "adj", explanation: "Chưa chắc chắn hoàn toàn và có thể thay đổi sau đó.", example: "They reached a tentative agreement." },
+
+  { test: "Cam 18 Test 3", vocab: "Textual evidence", meaning: "Bằng chứng từ văn bản", type: "n", explanation: "Thông tin hoặc chi tiết trong tài liệu dùng để hỗ trợ lập luận.", example: "Support your answer with textual evidence." },
+
+  { test: "Cam 18 Test 3", vocab: "Advocate", meaning: "Ủng hộ", type: "v", explanation: "Công khai hỗ trợ hoặc bảo vệ một ý tưởng, chính sách hoặc nhóm người.", example: "Many educators advocate inclusive classrooms." },
+
+  { test: "Cam 18 Test 3", vocab: "Levels of attainment", meaning: "Mức độ tiếp thu", type: "n", explanation: "Mức độ thành tích hoặc kết quả học tập đạt được.", example: "Students show different levels of attainment." },
+
+  { test: "Cam 18 Test 3", vocab: "Selective school", meaning: "Trường tuyển chọn", type: "n", explanation: "Trường chỉ nhận học sinh đạt tiêu chuẩn đầu vào nhất định.", example: "He attended a selective school." },
+
+  { test: "Cam 18 Test 3", vocab: "Comprehensive", meaning: "Toàn diện", type: "adj", explanation: "Bao quát đầy đủ nhiều khía cạnh hoặc nhiều nhóm đối tượng.", example: "Comprehensive schools accept students of all abilities." },
+
+  { test: "Cam 18 Test 3", vocab: "Straggler", meaning: "Người tụt lại", type: "n", explanation: "Người di chuyển hoặc tiến bộ chậm hơn nhóm còn lại.", example: "The teacher encouraged every straggler." },
+
+  { test: "Cam 18 Test 3", vocab: "Mediocrity", meaning: "Sự tầm thường", type: "n", explanation: "Mức chất lượng chỉ ở mức trung bình, thiếu sự nổi bật.", example: "He refused to accept mediocrity." },
+
+  { test: "Cam 18 Test 3", vocab: "Prevail", meaning: "Chiếm ưu thế", type: "v", explanation: "Chiến thắng, thành công hoặc trở nên nổi trội sau cạnh tranh.", example: "Determination helped her prevail." },
+
+  { test: "Cam 18 Test 3", vocab: "Frustrate", meaning: "Làm nản lòng", type: "v", explanation: "Khiến ai đó cảm thấy thất vọng hoặc mất động lực.", example: "Repeated failure can frustrate students." },
+
+  { test: "Cam 18 Test 3", vocab: "Stroll", meaning: "Cuộc đi dạo", type: "n", explanation: "Một hoạt động đi bộ thư thả và không vội vàng.", example: "They went for a stroll after class." },
+
+  { test: "Cam 18 Test 3", vocab: "Zone of proximal development", meaning: "Vùng phát triển gần", type: "n", explanation: "Khái niệm giáo dục chỉ khoảng kỹ năng người học có thể đạt được khi được hỗ trợ.", example: "The theory emphasizes the zone of proximal development." },
+
+  { test: "Cam 18 Test 3", vocab: "Scaffolding", meaning: "Giàn giáo học tập", type: "n", explanation: "Phương pháp hỗ trợ từng bước giúp người học phát triển kỹ năng.", example: "Scaffolding helps students learn gradually." },
+
+  { test: "Cam 18 Test 3", vocab: "Be capable of", meaning: "Có khả năng", type: "phrase", explanation: "Có năng lực hoặc tiềm năng để thực hiện điều gì đó.", example: "Every child is capable of improvement." },
+
+  { test: "Cam 18 Test 3", vocab: "Pedagogical paradigm", meaning: "Mô hình sư phạm", type: "n", explanation: "Khung lý thuyết hoặc phương pháp định hướng hoạt động giảng dạy.", example: "The school adopted a new pedagogical paradigm." },
+
+  { test: "Cam 18 Test 3", vocab: "Constructivism", meaning: "Chủ nghĩa kiến tạo", type: "n", explanation: "Lý thuyết học tập cho rằng người học tự xây dựng kiến thức qua trải nghiệm.", example: "Constructivism emphasizes active learning." },
+
+  { test: "Cam 18 Test 3", vocab: "Emerge out of", meaning: "Nảy sinh từ", type: "v", explanation: "Xuất hiện hoặc phát triển từ một nguồn gốc hoặc quá trình nào đó.", example: "New ideas emerge out of collaboration." },
+
+  { test: "Cam 18 Test 3", vocab: "Constructivist", meaning: "Thuộc chủ nghĩa kiến tạo", type: "adj", explanation: "Liên quan đến phương pháp học tập lấy người học làm trung tâm.", example: "She uses a constructivist approach." },
+
+  { test: "Cam 18 Test 3", vocab: "Zeal", meaning: "Lòng nhiệt huyết", type: "n", explanation: "Sự đam mê và quyết tâm mạnh mẽ đối với một mục tiêu.", example: "His zeal inspired the class." },
+
+  { test: "Cam 18 Test 3", vocab: "At the expense of", meaning: "Đánh đổi bằng", type: "phrase", explanation: "Đạt được điều gì đó nhưng gây thiệt hại cho điều khác.", example: "Success should not come at the expense of others." },
+
+  { test: "Cam 18 Test 3", vocab: "Lookout", meaning: "Người quan sát", type: "n", explanation: "Người được giao nhiệm vụ quan sát và cảnh báo nguy hiểm.", example: "The lookout warned the group of danger." },
+
+  // Cam 18 Test 4
+  { test: "Cam 18 Test 4", vocab: "Replicate", meaning: "Sao chép", type: "v", explanation: "Tạo ra bản sao hoặc lặp lại một quá trình, mô hình hay kết quả giống bản gốc.", example: "The successful business model of the company led other entrepreneurs to replicate it in their own ventures." },
+
+  { test: "Cam 18 Test 4", vocab: "Norm", meaning: "Chuẩn mực", type: "n", explanation: "Quy tắc, hành vi hoặc tiêu chuẩn được xã hội hoặc một nhóm người chấp nhận rộng rãi.", example: "In some cultures, it is the norm to greet others with a bow instead of a handshake." },
+
+  { test: "Cam 18 Test 4", vocab: "Greenery", meaning: "Cây xanh", type: "n", explanation: "Cây cối, thảm thực vật hoặc không gian có nhiều cây xanh tạo cảm giác tự nhiên.", example: "The park is known for its lush greenery and beautiful flower beds." },
+
+  { test: "Cam 18 Test 4", vocab: "Mitigate", meaning: "Giảm thiểu", type: "v", explanation: "Làm giảm mức độ nghiêm trọng, tác động hoặc hậu quả tiêu cực của một vấn đề.", example: "Planting trees around buildings can help mitigate the effects of air pollution." },
+
+  { test: "Cam 18 Test 4", vocab: "Cope", meaning: "Đối phó", type: "v", explanation: "Xử lý hoặc thích nghi với những tình huống khó khăn, áp lực hoặc thử thách.", example: "She developed effective coping mechanisms to deal with stress and anxiety." },
+
+  { test: "Cam 18 Test 4", vocab: "Prescribe", meaning: "Kê đơn", type: "v", explanation: "Chỉ định thuốc, phương pháp điều trị hoặc giải pháp bởi chuyên gia có thẩm quyền.", example: "The dentist will prescribe antibiotics to prevent infection after the tooth extraction." },
+
+  { test: "Cam 18 Test 4", vocab: "Dementia", meaning: "Chứng mất trí", type: "n", explanation: "Nhóm bệnh làm suy giảm trí nhớ, tư duy và khả năng thực hiện hoạt động thường ngày.", example: "Engaging in mentally stimulating activities can potentially lower the risk of developing dementia in old age." },
+
+  { test: "Cam 18 Test 4", vocab: "Obesity", meaning: "Béo phì", type: "n", explanation: "Tình trạng tích tụ mỡ quá mức trong cơ thể gây ảnh hưởng đến sức khỏe.", example: "Unhealthy eating habits and a sedentary lifestyle can contribute to obesity." },
+
+  { test: "Cam 18 Test 4", vocab: "Cultivate", meaning: "Trồng trọt", type: "v", explanation: "Canh tác đất đai hoặc phát triển kỹ năng, phẩm chất thông qua quá trình rèn luyện.", example: "She has learned how to cultivate a variety of herbs and spices in her backyard garden." },
+
+  { test: "Cam 18 Test 4", vocab: "Radical urban design", meaning: "Thiết kế đô thị cấp tiến", type: "n", explanation: "Cách tiếp cận quy hoạch đô thị mang tính đột phá, khác biệt với mô hình truyền thống.", example: "The architect proposed a radical urban design that challenged traditional city planning concepts." },
+
+  { test: "Cam 18 Test 4", vocab: "Monumental problem", meaning: "Vấn đề lớn", type: "n", explanation: "Một thách thức rất lớn, phức tạp và đòi hỏi nhiều nguồn lực để giải quyết.", example: "Solving homelessness is a monumental problem that requires the collective effort of society." },
+
+  { test: "Cam 18 Test 4", vocab: "Access to resources", meaning: "Truy cập vào tài nguyên", type: "n", explanation: "Khả năng tiếp cận các nguồn lực như giáo dục, công nghệ, tài chính hoặc dịch vụ.", example: "Providing equal access to resources such as education and healthcare is essential for a fair and just society." },
+
+  { test: "Cam 18 Test 4", vocab: "Rooftop space", meaning: "Không gian trên sân thượng", type: "n", explanation: "Khu vực trên mái nhà có thể được tận dụng cho sinh hoạt, trồng cây hoặc giải trí.", example: "The unused rooftop space of the building was transformed into a vibrant rooftop garden." },
+
+  { test: "Cam 18 Test 4", vocab: "Forward-thinking policy", meaning: "Chính sách hướng tới tương lai", type: "n", explanation: "Chính sách được xây dựng với tầm nhìn dài hạn, chú trọng phát triển bền vững.", example: "The city implemented a forward-thinking policy to reduce carbon emissions and promote sustainability." },
+
+  { test: "Cam 18 Test 4", vocab: "Notion", meaning: "Khái niệm", type: "n", explanation: "Ý tưởng, quan điểm hoặc niềm tin về một sự vật hay hiện tượng.", example: "The notion of working together as a team was inspiring." },
+
+  { test: "Cam 18 Test 4", vocab: "Innate intelligence", meaning: "Trí thông minh bẩm sinh", type: "n", explanation: "Khả năng tư duy, học hỏi hoặc giải quyết vấn đề có sẵn từ khi sinh ra.", example: "Mozart's innate intelligence in music was evident from a young age." },
+
+  { test: "Cam 18 Test 4", vocab: "Progressive thinker", meaning: "Nhà tư tưởng tiến bộ", type: "n", explanation: "Người có tư duy đổi mới, cởi mở và sẵn sàng thách thức quan điểm truyền thống.", example: "As a progressive thinker, she always seeks new solutions to societal issues." },
+
+  { test: "Cam 18 Test 4", vocab: "Revolt against", meaning: "Chống lại", type: "v", explanation: "Nổi dậy hoặc phản kháng mạnh mẽ chống lại quyền lực hoặc hệ thống.", example: "The citizens decided to revolt against the oppressive regime." },
+
+  { test: "Cam 18 Test 4", vocab: "Take root", meaning: "Bén rễ", type: "v", explanation: "Bắt đầu phát triển, được chấp nhận hoặc trở nên vững chắc theo thời gian.", example: "The idea of democracy began to take root in the country." },
+
+  { test: "Cam 18 Test 4", vocab: "Supplant", meaning: "Thay thế", type: "v", explanation: "Thay thế một người, hệ thống hoặc phương pháp bằng thứ khác hiệu quả hơn.", example: "The new technology may supplant traditional methods of communication." },
+
+  { test: "Cam 18 Test 4", vocab: "Cognitive ability", meaning: "Khả năng nhận thức", type: "n", explanation: "Khả năng tư duy, ghi nhớ, học tập, suy luận và xử lý thông tin.", example: "Memory is an essential cognitive ability for learning." },
+
+  { test: "Cam 18 Test 4", vocab: "Inherent ability", meaning: "Khả năng vốn có", type: "n", explanation: "Năng lực tự nhiên có sẵn trong một người từ đầu.", example: "His inherent ability to solve complex problems impressed everyone." },
+
+  { test: "Cam 18 Test 4", vocab: "Concentrate", meaning: "Tập trung", type: "v", explanation: "Dồn toàn bộ sự chú ý hoặc nỗ lực vào một nhiệm vụ cụ thể.", example: "To improve focus, you should try to concentrate on one task at a time." },
+
+  { test: "Cam 18 Test 4", vocab: "Coax", meaning: "Dỗ dành", type: "v", explanation: "Thuyết phục ai đó bằng sự nhẹ nhàng, kiên nhẫn hoặc khuyến khích.", example: "The teacher tried to coax the shy student to participate." },
+
+  { test: "Cam 18 Test 4", vocab: "Fixed mindset", meaning: "Tư duy cố định", type: "n", explanation: "Quan điểm cho rằng năng lực và trí thông minh là cố định, khó thay đổi.", example: "People with a fixed mindset avoid challenges to protect their self-esteem." },
+
+  { test: "Cam 18 Test 4", vocab: "Self-esteem", meaning: "Lòng tự trọng", type: "n", explanation: "Cảm nhận tích cực hoặc tiêu cực của một người về giá trị bản thân.", example: "Building self-esteem is essential for a positive self-image." },
+
+  { test: "Cam 18 Test 4", vocab: "Sense of worth", meaning: "Cảm giác có giá trị", type: "n", explanation: "Nhận thức rằng bản thân có ý nghĩa, năng lực hoặc đóng góp tích cực.", example: "She gained a sense of worth after receiving the award." },
+
+  { test: "Cam 18 Test 4", vocab: "Psychologist", meaning: "Nhà tâm lý học", type: "n", explanation: "Chuyên gia nghiên cứu hành vi, cảm xúc và quá trình tư duy của con người.", example: "The psychologist helped him cope with anxiety." },
+
+  { test: "Cam 18 Test 4", vocab: "Praise", meaning: "Khen", type: "v", explanation: "Thể hiện sự đánh giá cao hoặc công nhận thành tích của ai đó.", example: "The teacher praised the students for their excellent performance." },
+
+  { test: "Cam 18 Test 4", vocab: "Instill", meaning: "Truyền đạt, thấm nhuần", type: "v", explanation: "Dần dần đưa một giá trị, niềm tin hoặc thái độ vào suy nghĩ của người khác.", example: "Parents try to instill good values in their children." },
+
+  { test: "Cam 18 Test 4", vocab: "Infer", meaning: "Suy luận", type: "v", explanation: "Rút ra kết luận dựa trên bằng chứng, dữ kiện hoặc quan sát.", example: "Based on the evidence, we can infer that he is guilty." },
+
+  { test: "Cam 18 Test 4", vocab: "Emphasize", meaning: "Nhấn mạnh", type: "v", explanation: "Làm nổi bật hoặc cho thấy tầm quan trọng của điều gì đó.", example: "The coach will emphasize the importance of teamwork." },
+
+  { test: "Cam 18 Test 4", vocab: "Interpret", meaning: "Diễn giải", type: "v", explanation: "Giải thích ý nghĩa của thông tin, sự kiện hoặc tác phẩm theo cách hiểu.", example: "The students will interpret the poem in different ways." },
+
+  { test: "Cam 18 Test 4", vocab: "Morale", meaning: "Tinh thần", type: "n", explanation: "Mức độ tự tin, động lực hoặc tinh thần tích cực trong một nhóm.", example: "The team meeting improved morale among the employees." },
+
+  { test: "Cam 18 Test 4", vocab: "Misapply", meaning: "Ứng dụng sai", type: "v", explanation: "Áp dụng quy tắc, lý thuyết hoặc phương pháp không đúng cách.", example: "It is important not to misapply the rules of the game." },
+
+  { test: "Cam 18 Test 4", vocab: "Concept", meaning: "Khái niệm", type: "n", explanation: "Ý tưởng hoặc nguyên tắc trừu tượng dùng để giải thích sự vật, hiện tượng.", example: "The concept of time is complex and multifaceted." },
+
+  { test: "Cam 18 Test 4", vocab: "Intervention", meaning: "Sự can thiệp", type: "n", explanation: "Hành động tham gia để thay đổi, hỗ trợ hoặc cải thiện một tình huống.", example: "The teacher provided additional intervention for struggling students." },
+
+  { test: "Cam 18 Test 4", vocab: "Adolescent", meaning: "Thanh thiếu niên", type: "n", explanation: "Người trong giai đoạn phát triển từ trẻ em sang người trưởng thành.", example: "Adolescent students often experience peer pressure." },
+
+  { test: "Cam 18 Test 4", vocab: "Misappropriate", meaning: "Sử dụng sai", type: "v", explanation: "Chiếm dụng hoặc sử dụng tài sản, thông tin không đúng mục đích.", example: "The research findings were misappropriated by other scientists." },
+
+  { test: "Cam 18 Test 4", vocab: "Conflate", meaning: "Đánh đồng", type: "v", explanation: "Kết hợp hoặc nhầm lẫn hai khái niệm khác nhau thành một.", example: "It is important not to conflate correlation with causation." },
+
+  { test: "Cam 18 Test 4", vocab: "Cope with", meaning: "Đối phó với", type: "v", explanation: "Quản lý hoặc xử lý thành công một tình huống khó khăn.", example: "She had to cope with the stress of final exams." },
+
+  { test: "Cam 18 Test 4", vocab: "Admirable", meaning: "Đáng ngưỡng mộ", type: "adj", explanation: "Gây ấn tượng tích cực và khiến người khác tôn trọng.", example: "Her dedication to helping others is truly admirable." },
+
+  { test: "Cam 18 Test 4", vocab: "Deserve", meaning: "Xứng đáng", type: "v", explanation: "Có quyền hoặc nên nhận được điều gì đó dựa trên hành động hoặc phẩm chất.", example: "They deserve recognition for their hard work." },
+
+  { test: "Cam 18 Test 4", vocab: "Coverage", meaning: "Phạm vi đưa tin", type: "n", explanation: "Mức độ hoặc phạm vi thông tin được truyền thông hoặc hệ thống đề cập.", example: "The news channel provides extensive coverage of world events." },
+
+  { test: "Cam 18 Test 4", vocab: "Elixir", meaning: "Tiên dược", type: "n", explanation: "Theo nghĩa đen là thuốc thần; nghĩa bóng là giải pháp tưởng như hoàn hảo.", example: "There is no magical elixir for success; it takes hard work and dedication." },
+
+  { test: "Cam 18 Test 4", vocab: "Proponent", meaning: "Người ủng hộ", type: "n", explanation: "Người tích cực bảo vệ, quảng bá hoặc ủng hộ một ý tưởng.", example: "He is a proponent of renewable energy solutions." },
+
+  { test: "Cam 18 Test 4", vocab: "Strive", meaning: "Phấn đấu", type: "v", explanation: "Nỗ lực mạnh mẽ để đạt được mục tiêu hoặc cải thiện bản thân.", example: "Despite facing challenges, she continues to strive for excellence." },
+
+  { test: "Cam 18 Test 4", vocab: "Deluded notion", meaning: "Quan niệm sai lầm", type: "n", explanation: "Niềm tin không thực tế hoặc sai lệch về bản thân hay thế giới.", example: "His deluded notion of invincibility led to risky behavior." },
+
+  { test: "Cam 18 Test 4", vocab: "Dissonance", meaning: "Sự bất hòa", type: "n", explanation: "Sự không nhất quán, mâu thuẫn hoặc thiếu hòa hợp giữa các yếu tố.", example: "The dissonance between her actions and words was confusing." },
+
+  { test: "Cam 18 Test 4", vocab: "Philosophy", meaning: "Triết lý", type: "n", explanation: "Hệ thống tư tưởng hoặc quan điểm nền tảng về cuộc sống hoặc một lĩnh vực.", example: "His philosophy on life emphasizes kindness and gratitude." },
+
+  { test: "Cam 18 Test 4", vocab: "Concrete", meaning: "Cụ thể", type: "adj", explanation: "Rõ ràng, thực tế và có thể quan sát hoặc kiểm chứng được.", example: "She provided concrete examples to support her argument." },
+
+  { test: "Cam 18 Test 4", vocab: "Continental drift", meaning: "Sự trôi dạt lục địa", type: "n", explanation: "Lý thuyết cho rằng các lục địa di chuyển dần theo thời gian địa chất.", example: "The theory of continental drift suggests that the continents were once connected and have since moved apart." },
+
+  { test: "Cam 18 Test 4", vocab: "Dispute", meaning: "Tranh chấp", type: "v", explanation: "Phản đối, không đồng ý hoặc thách thức tính đúng đắn của điều gì đó.", example: "I tried to dispute the bill with the waiter." },
+
+  { test: "Cam 18 Test 4", vocab: "Laterally", meaning: "Theo chiều ngang", type: "adv", explanation: "Di chuyển hoặc phát triển theo hướng ngang thay vì dọc.", example: "The tectonic plates move laterally along their boundaries." },
+
+  { test: "Cam 18 Test 4", vocab: "Plate tectonics", meaning: "Mảng kiến tạo", type: "n", explanation: "Lý thuyết giải thích sự chuyển động của các mảng vỏ Trái Đất.", example: "Plate tectonics explains the movement of Earth's lithosphere on the semi-fluid asthenosphere." },
+
+  { test: "Cam 18 Test 4", vocab: "Evolutionary theory", meaning: "Thuyết tiến hóa", type: "n", explanation: "Lý thuyết khoa học giải thích sự thay đổi của sinh vật qua thời gian.", example: "Darwin's evolutionary theory proposed natural selection as the driving force of species adaptation." },
+
+  { test: "Cam 18 Test 4", vocab: "Biological evolution", meaning: "Tiến hóa sinh học", type: "n", explanation: "Quá trình sinh vật thay đổi đặc điểm di truyền qua nhiều thế hệ.", example: "Biological evolution accounts for the diversity and adaptation of living organisms over time." },
+
+  { test: "Cam 18 Test 4", vocab: "Hazardous exploration", meaning: "Chuyến khám phá nguy hiểm", type: "n", explanation: "Hoạt động nghiên cứu hoặc thám hiểm có mức độ rủi ro cao.", example: "The hazardous exploration of the deep-sea trench revealed new species previously unknown to science." },
+
+  { test: "Cam 18 Test 4", vocab: "Biographer", meaning: "Người viết tiểu sử", type: "n", explanation: "Người nghiên cứu và viết về cuộc đời của một cá nhân khác.", example: "The biographer meticulously documented the life and achievements of the Nobel laureate." },
+
+  { test: "Cam 18 Test 4", vocab: "Narrow investigation", meaning: "Nghiên cứu hẹp", type: "n", explanation: "Nghiên cứu tập trung vào một phạm vi hoặc khía cạnh rất cụ thể.", example: "The narrow investigation focused solely on the chemical properties of the compound." },
+
+  { test: "Cam 18 Test 4", vocab: "Intriguing", meaning: "Hấp dẫn", type: "adj", explanation: "Khơi gợi sự tò mò, quan tâm hoặc muốn khám phá thêm.", example: "The findings of the study were intriguing and raised further research questions." },
+
+  { test: "Cam 18 Test 4", vocab: "Astronomer", meaning: "Nhà thiên văn học", type: "n", explanation: "Nhà khoa học nghiên cứu các thiên thể và hiện tượng trong vũ trụ.", example: "The astronomer observed the celestial event through a powerful telescope." },
+
+  { test: "Cam 18 Test 4", vocab: "Pursue", meaning: "Theo đuổi", type: "v", explanation: "Dành thời gian và nỗ lực để đạt mục tiêu, nghề nghiệp hoặc nghiên cứu.", example: "The young scientist decided to pursue a career in neuroscience." },
+
+  { test: "Cam 18 Test 4", vocab: "Aloft", meaning: "Trên cao", type: "adv", explanation: "Ở vị trí cao trong không trung hoặc phía trên mặt đất.", example: "The weather balloon was aloft, collecting data on atmospheric conditions." },
+
+  { test: "Cam 18 Test 4", vocab: "Thermodynamics", meaning: "Nhiệt động học", type: "n", explanation: ":contentReference[oaicite:1]{index=1} nghiên cứu mối quan hệ giữa nhiệt, năng lượng và công.", example: "Thermodynamics is the branch of physics that deals with heat and its relation to energy." },
+
+  { test: "Cam 18 Test 4", vocab: "Urge", meaning: "Thúc giục", type: "v", explanation: "Khuyến khích mạnh mẽ hoặc thúc đẩy ai đó hành động.", example: "The mentor would often urge the students to pursue innovative ideas fearlessly." },
+
+  { test: "Cam 18 Test 4", vocab: "Index", meaning: "Mục lục", type: "n", explanation: "Danh sách được sắp xếp có hệ thống để giúp tìm kiếm thông tin nhanh hơn.", example: "The scientific database contained an index of relevant research articles." },
+
+  { test: "Cam 18 Test 4", vocab: "Sufficient", meaning: "Đầy đủ", type: "adj", explanation: "Có số lượng hoặc chất lượng đáp ứng nhu cầu hoặc yêu cầu đặt ra.", example: "The evidence presented was deemed sufficient to support the hypothesis." },
+
+  { test: "Cam 18 Test 4", vocab: "Entail", meaning: "Kéo theo", type: "v", explanation: "Bao hàm, dẫn đến hoặc yêu cầu điều gì đó như hệ quả tất yếu.", example: "Conducting a comprehensive study can entail a substantial investment of time and resources." },
+
+  { test: "Cam 18 Test 4", vocab: "Retrospectively", meaning: "Hồi cứu", type: "adv", explanation: "Xem xét hoặc phân tích lại điều gì đó sau khi nó đã xảy ra.", example: "The researchers analyzed the data retrospectively to identify trends." },
+
+  { test: "Cam 18 Test 4", vocab: "Happenstance", meaning: "Sự ngẫu nhiên", type: "n", explanation: "Một sự kiện xảy ra tình cờ mà không có kế hoạch trước.", example: "The discovery of the new species was a happenstance during a routine survey." },
+
+  { test: "Cam 18 Test 4", vocab: "Coherent narrative", meaning: "Câu chuyện mạch lạc", type: "n", explanation: "Chuỗi thông tin hoặc lập luận được trình bày logic và dễ theo dõi.", example: "The scientist presented a coherent narrative to explain the complex phenomenon." },
+
+  { test: "Cam 18 Test 4", vocab: "Paleontology", meaning: "Cổ sinh vật học", type: "n", explanation: ":contentReference[oaicite:2]{index=2} nghiên cứu sinh vật cổ đại thông qua hóa thạch.", example: "Paleontology is the scientific study of ancient life through fossils and remains." },
+
+  { test: "Cam 18 Test 4", vocab: "Climatology", meaning: "Khí hậu học", type: "n", explanation: ":contentReference[oaicite:3]{index=3} nghiên cứu các mô hình khí hậu dài hạn của Trái Đất.", example: "Climatology examines the long-term patterns and variations of Earth's climate." },
+
+  { test: "Cam 18 Test 4", vocab: "Meteorologist", meaning: "Nhà khí tượng học", type: "n", explanation: "Nhà khoa học nghiên cứu thời tiết, khí quyển và dự báo khí tượng.", example: "The meteorologist predicted heavy rainfall for the upcoming week." },
+  
   // Cam 19 Test 1
   { test: "Cam 19 Test 1", vocab: "Publicise", meaning: "Công khai", type: "v", explanation: "Làm cho thông tin trở nên công khai và được nhiều người biết đến.", example: "The company decided to ______ its new product." },
   { test: "Cam 19 Test 1", vocab: "Subtle", meaning: "Tinh tế", type: "adj", explanation: "Khó nhận ra, không rõ ràng nhưng có ý nghĩa quan trọng.", example: "There are ______ differences between the two results." },
